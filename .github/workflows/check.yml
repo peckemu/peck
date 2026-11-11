@@ -1,0 +1,34 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.3
+
+      - run: bun install --frozen-lockfile
+
+      - name: Typecheck
+        run: >
+          bun --bun tsc -b $(bun -e "for (const reference of (await
+          Bun.file('tsconfig.json').json()).references) if (reference.path !==
+          'tests') console.log(reference.path)")
+
+      - name: Lint
+        run: bun run lint
+
+      - name: Format
+        run: bun run format:check

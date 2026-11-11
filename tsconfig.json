@@ -1,0 +1,53 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/shared"
+    },
+    {
+      "path": "packages/logger"
+    },
+    {
+      "path": "packages/banner"
+    },
+    {
+      "path": "packages/permissions"
+    },
+    {
+      "path": "packages/content"
+    },
+    {
+      "path": "packages/protocol"
+    },
+    {
+      "path": "packages/packets"
+    },
+    {
+      "path": "packages/redis"
+    },
+    {
+      "path": "packages/cluster"
+    },
+    {
+      "path": "packages/database"
+    },
+    {
+      "path": "packages/game"
+    },
+    {
+      "path": "packages/plugins"
+    },
+    {
+      "path": "apps/emulator"
+    },
+    {
+      "path": "apps/console"
+    },
+    {
+      "path": "apps/api"
+    },
+    {
+      "path": "tests"
+    }
+  ]
+}

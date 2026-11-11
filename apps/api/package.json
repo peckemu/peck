@@ -1,0 +1,29 @@
+{
+  "name": "@peck/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --env-file=../../.env --env-file=../../.env.local --hot src/index.ts",
+    "start": "bun --env-file=../../.env --env-file=../../.env.local src/index.ts"
+  },
+  "exports": {
+    "./rpc": "./src/rpc/index.ts"
+  },
+  "imports": {
+    "#api/*": "./src/*/index.ts"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "0.9.1",
+    "@needle-di/core": "1.2.1",
+    "@peck/cluster": "workspace:*",
+    "@peck/database": "workspace:*",
+    "@peck/logger": "workspace:*",
+    "@peck/permissions": "workspace:*",
+    "@peck/redis": "workspace:*",
+    "@peck/shared": "workspace:*",
+    "hono": "4.13.17",
+    "uql-orm": "0.104.1",
+    "zod": "4.6.7"
+  }
+}

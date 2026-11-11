@@ -1,0 +1,18 @@
+{
+  "name": "@peck/protocol",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@peck/shared": "workspace:*",
+    "fast-xml-builder": "1.3.1",
+    "fast-xml-parser": "5.12.0",
+    "fast-xml-validator": "1.4.2"
+  },
+  "imports": {
+    "#protocol/*": "./src/*/index.ts"
+  }
+}
