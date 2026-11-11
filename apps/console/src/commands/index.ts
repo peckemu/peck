@@ -9,6 +9,7 @@ import { PlayerRenameCommand } from '#console/commands/player/rename'
 import { PluginsListCommand } from '#console/commands/plugins/list'
 import { ShopStockCommand } from '#console/commands/shop/stock'
 import { ShopUnstockCommand } from '#console/commands/shop/unstock'
+import { UpdateCommand } from '#console/commands/update'
 
 /**
  * Builds the core commands
@@ -25,4 +26,5 @@ export const commands = (plugins: PluginHost): Command[] => [
   new PlayerRenameCommand(),
   new ShopStockCommand(),
   new ShopUnstockCommand(),
+  new UpdateCommand(plugins),
 ]
