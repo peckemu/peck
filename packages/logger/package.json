@@ -1,0 +1,13 @@
+{
+  "name": "@peck/logger",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "pino": "10.4.0",
+    "pino-pretty": "13.2.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/.tsbuildinfo"
+  },
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../../packages/shared"
+    },
+    {
+      "path": "../../packages/protocol"
+    },
+    {
+      "path": "../../packages/packets"
+    },
+    {
+      "path": "../../packages/game"
+    },
+    {
+      "path": "../../packages/database"
+    },
+    {
+      "path": "../../packages/redis"
+    },
+    {
+      "path": "../../packages/plugins"
+    },
+    {
+      "path": "../../packages/cluster"
+    },
+    {
+      "path": "../../packages/logger"
+    }
+  ]
+}

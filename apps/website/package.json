@@ -1,0 +1,41 @@
+{
+  "name": "@peck/website",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --bun nuxt dev --port 3001 --dotenv ../../.env.local",
+    "build": "bun --bun nuxt build",
+    "preview": "bun --bun nuxt preview",
+    "postinstall": "bun --bun nuxt prepare",
+    "typecheck": "bun --bun nuxt typecheck",
+    "lint": "bun --bun eslint ."
+  },
+  "dependencies": {
+    "@nuxt/eslint": "1.17.0",
+    "@nuxt/hints": "1.1.5",
+    "@nuxt/image": "2.2.1",
+    "@nuxt/scripts": "1.3.12",
+    "@peck/api": "workspace:*",
+    "@peck/permissions": "workspace:*",
+    "@peck/ui": "workspace:*",
+    "@pinia/nuxt": "1.0.3",
+    "@sidebase/nuxt-auth": "1.4.0",
+    "@vueuse/core": "15.0.0",
+    "@vueuse/nuxt": "15.0.0",
+    "hono": "4.13.17",
+    "lucide-vue-next": "1.0.0",
+    "nuxt": "^4.5.2",
+    "pinia": "4.1.0",
+    "vue": "^3.5.0",
+    "vue-router": "5.3.1",
+    "vue3-toastify": "0.2.9"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "eslint": "10.14.0",
+    "sass": "1.108.2",
+    "tailwindcss": "4.3.3",
+    "vue-tsc": "^3.0.0"
+  }
+}

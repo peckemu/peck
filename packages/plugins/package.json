@@ -1,0 +1,20 @@
+{
+  "name": "@peck/plugins",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "imports": {
+    "#plugins/*": "./src/*/index.ts"
+  },
+  "dependencies": {
+    "@needle-di/core": "1.2.1",
+    "@peck/database": "workspace:*",
+    "@peck/game": "workspace:*",
+    "@peck/logger": "workspace:*",
+    "@peck/protocol": "workspace:*",
+    "@peck/redis": "workspace:*"
+  }
+}

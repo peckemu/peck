@@ -1,0 +1,16 @@
+{
+  "name": "@peck/packets",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "imports": {
+    "#packets/*": "./src/*/index.ts"
+  },
+  "dependencies": {
+    "@peck/protocol": "workspace:*",
+    "@peck/shared": "workspace:*"
+  }
+}

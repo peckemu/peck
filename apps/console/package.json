@@ -1,0 +1,23 @@
+{
+  "name": "@peck/console",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "peck": "./src/index.ts"
+  },
+  "scripts": {
+    "peck": "bun --env-file=../../.env --env-file=../../.env.local src/index.ts"
+  },
+  "dependencies": {
+    "@peck/cluster": "workspace:*",
+    "@peck/content": "workspace:*",
+    "@peck/database": "workspace:*",
+    "@peck/plugins": "workspace:*",
+    "@peck/redis": "workspace:*",
+    "uql-orm": "0.104.1"
+  },
+  "imports": {
+    "#console/*": "./src/*/index.ts"
+  }
+}

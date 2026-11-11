@@ -1,0 +1,25 @@
+{
+  "name": "@peck/database",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "sync": "bun --bun --env-file=../../.env --env-file=../../.env.local uql-migrate sync",
+    "generate": "bun --bun --env-file=../../.env --env-file=../../.env.local uql-migrate generate:entities",
+    "up": "bun --bun --env-file=../../.env --env-file=../../.env.local uql-migrate up",
+    "down": "bun --bun --env-file=../../.env --env-file=../../.env.local uql-migrate down",
+    "status": "bun --bun --env-file=../../.env --env-file=../../.env.local uql-migrate status",
+    "seed": "bun --env-file=../../.env --env-file=../../.env.local seed.ts"
+  },
+  "dependencies": {
+    "@peck/permissions": "workspace:*",
+    "@peck/shared": "workspace:*",
+    "uql-orm": "0.104.1"
+  },
+  "imports": {
+    "#database/*": "./src/*/index.ts"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@peck/emulator",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --env-file=../../.env --env-file=../../.env.local --watch src/index.ts",
+    "start": "bun --env-file=../../.env --env-file=../../.env.local src/index.ts"
+  },
+  "dependencies": {
+    "@needle-di/core": "1.2.1",
+    "@peck/cluster": "workspace:*",
+    "@peck/database": "workspace:*",
+    "@peck/game": "workspace:*",
+    "@peck/logger": "workspace:*",
+    "@peck/packets": "workspace:*",
+    "@peck/permissions": "workspace:*",
+    "@peck/plugins": "workspace:*",
+    "@peck/protocol": "workspace:*",
+    "@peck/redis": "workspace:*",
+    "@peck/shared": "workspace:*"
+  },
+  "imports": {
+    "#emulator/*": "./src/*/index.ts"
+  }
+}
