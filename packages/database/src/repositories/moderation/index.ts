@@ -1,11 +1,11 @@
-import { Player } from '#database/entities/player'
-import { Report } from '#database/entities/moderation/report'
+import { Player } from '../../entities/player/index.ts'
+import { Report } from '../../entities/moderation/report/index.ts'
 import {
   Sanction,
   type SanctionKind,
-} from '#database/entities/moderation/sanction'
-import { type Database } from '#database/pool'
-import { writeAudit } from '#database/repositories/audit'
+} from '../../entities/moderation/sanction/index.ts'
+import { type Database } from '../../pool/index.ts'
+import { writeAudit } from '../audit/index.ts'
 
 /**
  * The audit action by sanction kind

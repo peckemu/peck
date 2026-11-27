@@ -2,7 +2,6 @@
  * The kinds of protocol error
  */
 export type ProtocolErrorCode =
-  | 'FRAME_TOO_LARGE'
   | 'FRAME_DELIMITER'
   | 'UNKNOWN_FORMAT'
   | 'XML_SYNTAX'

@@ -1,6 +1,6 @@
 import { Entity, Field, type filledKey, Id, type idKey } from 'uql-orm'
 
-import { Trade } from '#database/entities/trade/trade'
+import { Trade } from '../trade/index.ts'
 
 /**
  * A traded thing

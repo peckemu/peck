@@ -1,6 +1,6 @@
 import { type Hono } from 'hono'
 
-import { type Context } from '#api/types'
+import { type Context } from '../../types/index.ts'
 
 /**
  * A feature of the API

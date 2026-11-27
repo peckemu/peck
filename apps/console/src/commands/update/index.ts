@@ -2,7 +2,7 @@ import { join } from 'node:path'
 
 import { Command, type Options, type PluginHost } from '@peck/plugins'
 
-import { MigrateCommand } from '#console/commands/database/migrate'
+import { MigrateCommand } from '../database/migrate/index.ts'
 
 /**
  * @sxip This command requires git to be installed and available in the PATH, if you do not have git installed, the update will fail..

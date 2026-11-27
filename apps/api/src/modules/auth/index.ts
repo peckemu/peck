@@ -1,5 +1,5 @@
-import { type Module } from '#api/modules/module'
-import { authRouter } from '#api/modules/auth/routes'
+import { type Module } from '../module/index.ts'
+import { authRouter } from './routes/index.ts'
 
 /**
  * The auth module

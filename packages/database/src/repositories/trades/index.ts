@@ -1,15 +1,15 @@
 import { TradeKind } from '@peck/shared'
 
-import { Avatar } from '#database/entities/avatar'
-import { Block } from '#database/entities/buddies/block'
-import { DenItem } from '#database/entities/den/item'
-import { DenShop } from '#database/entities/den/shop'
-import { Item } from '#database/entities/item'
-import { Pet } from '#database/entities/pet'
-import { TradeItem } from '#database/entities/trade/item'
-import { TradeListing } from '#database/entities/trade/listing'
-import { Trade } from '#database/entities/trade/trade'
-import { type Database, type Querier } from '#database/pool'
+import { Avatar } from '../../entities/avatar/index.ts'
+import { Block } from '../../entities/buddies/block/index.ts'
+import { DenItem } from '../../entities/den/item/index.ts'
+import { DenShop } from '../../entities/den/shop/index.ts'
+import { Item } from '../../entities/item/index.ts'
+import { Pet } from '../../entities/pet/index.ts'
+import { TradeItem } from '../../entities/trade/item/index.ts'
+import { TradeListing } from '../../entities/trade/listing/index.ts'
+import { Trade } from '../../entities/trade/trade/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * The most a trade list holds

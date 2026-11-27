@@ -1,7 +1,7 @@
 import { createMiddleware } from 'hono/factory'
 
-import { type Context } from '#api/types'
-import { AuthService } from '#api/modules/auth/services'
+import { type Context } from '../../types/index.ts'
+import { AuthService } from '../../modules/auth/services/index.ts'
 
 /**
  * Requires a session token

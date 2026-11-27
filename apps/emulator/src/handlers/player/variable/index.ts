@@ -4,10 +4,10 @@ import { UserVariableSetIncoming } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 import { BIT_FIELD_USER_VARS, SERVER_USER_VARS, UserVar } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { EcoPrizes } from '#emulator/handlers/den/eco/prizes'
-import { DailySpins } from '#emulator/sessions/spins'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { EcoPrizes } from '../../den/eco/prizes/index.ts'
+import { DailySpins } from '../../../sessions/spins/index.ts'
+import { PlayerVariables } from '../../../sessions/variables/index.ts'
 
 /**
  * The highest bit a bit field holds

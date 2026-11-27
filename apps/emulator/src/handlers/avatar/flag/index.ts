@@ -4,7 +4,7 @@ import { AvatarPendingFlagIncoming } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 import { PendingFlag } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * The bit the client may set

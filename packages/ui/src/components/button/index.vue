@@ -2,12 +2,9 @@
 import { LoaderCircle } from 'lucide-vue-next'
 import { type Component, computed } from 'vue'
 
-import { useButtonSize } from '#ui/components/button/composables/size'
-import { useButtonVariant } from '#ui/components/button/composables/variant'
-import {
-  type ButtonSize,
-  type ButtonVariant,
-} from '#ui/components/button/types'
+import { useButtonSize } from './composables/size/index.ts'
+import { useButtonVariant } from './composables/variant/index.ts'
+import { type ButtonSize, type ButtonVariant } from './types/index.ts'
 
 /**
  * The button's options

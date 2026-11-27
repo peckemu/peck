@@ -1,11 +1,11 @@
-import { Block } from '#database/entities/buddies/block'
-import { Buddy } from '#database/entities/buddies/buddy'
-import { DenItem } from '#database/entities/den/item'
-import { Item } from '#database/entities/item'
-import { Jamagram } from '#database/entities/jamagram'
-import { Player } from '#database/entities/player'
-import { TradeListing } from '#database/entities/trade/listing'
-import { type Database, type Querier } from '#database/pool'
+import { Block } from '../../entities/buddies/block/index.ts'
+import { Buddy } from '../../entities/buddies/buddy/index.ts'
+import { DenItem } from '../../entities/den/item/index.ts'
+import { Item } from '../../entities/item/index.ts'
+import { Jamagram } from '../../entities/jamagram/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { TradeListing } from '../../entities/trade/listing/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * The most cards an inbox holds

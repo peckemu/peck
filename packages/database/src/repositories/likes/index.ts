@@ -1,5 +1,5 @@
-import { Like, type LikeType } from '#database/entities/like'
-import { type Database } from '#database/pool'
+import { Like, type LikeType } from '../../entities/like/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * Keeps likes on walls and masterpieces

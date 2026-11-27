@@ -20,10 +20,10 @@ import {
 import { Handler, PacketHandler, PluginEvents, Throttle } from '@peck/plugins'
 import { TradeKind } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { TradeLists } from '#emulator/handlers/trade/lists'
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { TradeLists } from '../lists/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
 
 /**
  * The actions

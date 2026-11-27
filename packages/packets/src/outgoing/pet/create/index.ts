@@ -1,7 +1,7 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { type ShownPet } from '#packets/outgoing/pet/list'
-import { Outgoing } from '#packets/outgoing/headers'
+import { type ShownPet } from '../list/index.ts'
+import { Outgoing } from '../../headers/index.ts'
 
 /**
  * Whether a pet was adopted

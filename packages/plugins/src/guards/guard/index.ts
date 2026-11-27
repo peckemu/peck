@@ -1,4 +1,4 @@
-import { type PacketContext } from '#plugins/context'
+import { type PacketContext } from '../../context/index.ts'
 
 /**
  * A packet guard

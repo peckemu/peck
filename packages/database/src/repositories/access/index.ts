@@ -1,18 +1,18 @@
 import { type Actor, effectivePermissions } from '@peck/permissions'
 import { type SqlQuerier } from 'uql-orm'
 
-import { RoleAssignment } from '#database/entities/access/assignment'
-import { type AuditAction } from '#database/entities/access/audit'
-import { RoleGrant } from '#database/entities/access/grant'
+import { RoleAssignment } from '../../entities/access/assignment/index.ts'
+import { type AuditAction } from '../../entities/access/audit/index.ts'
+import { RoleGrant } from '../../entities/access/grant/index.ts'
 import {
   type OverrideEffect,
   PermissionOverride,
-} from '#database/entities/access/override'
-import { PermissionRow } from '#database/entities/access/permission'
-import { Role } from '#database/entities/access/role'
-import { Account } from '#database/entities/accounts/account'
-import { type Database } from '#database/pool'
-import { writeAudit } from '#database/repositories/audit'
+} from '../../entities/access/override/index.ts'
+import { PermissionRow } from '../../entities/access/permission/index.ts'
+import { Role } from '../../entities/access/role/index.ts'
+import { Account } from '../../entities/accounts/account/index.ts'
+import { type Database } from '../../pool/index.ts'
+import { writeAudit } from '../audit/index.ts'
 
 /**
  * The audit action by effect

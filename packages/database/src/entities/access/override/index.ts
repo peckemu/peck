@@ -7,8 +7,8 @@ import {
   type idKey,
 } from 'uql-orm'
 
-import { Account } from '#database/entities/accounts/account'
-import { PermissionRow } from '#database/entities/access/permission'
+import { Account } from '../../accounts/account/index.ts'
+import { PermissionRow } from '../permission/index.ts'
 
 /**
  * Whether an override grants or revokes

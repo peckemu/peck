@@ -1,6 +1,6 @@
 import { Field, OutgoingPacket, Packet } from '@peck/protocol'
 
-import { Outgoing } from '#packets/outgoing/headers'
+import { Outgoing } from '../../headers/index.ts'
 
 /**
  * Whether the wall's look was kept

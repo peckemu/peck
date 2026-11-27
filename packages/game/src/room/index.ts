@@ -1,6 +1,6 @@
-import { GameError } from '#game/error'
-import { type Player } from '#game/player'
-import { type RoomTemplate } from '#game/template'
+import { GameError } from '../error/index.ts'
+import { type Player } from '../player/index.ts'
+import { type RoomTemplate } from '../template/index.ts'
 
 /**
  * A room instance

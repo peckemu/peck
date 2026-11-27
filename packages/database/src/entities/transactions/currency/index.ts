@@ -1,6 +1,6 @@
 import { Entity, Field, Id, type idKey, ManyToOne } from 'uql-orm'
 
-import { Transaction } from '#database/entities/transactions/transaction'
+import { Transaction } from '../transaction/index.ts'
 
 /**
  * A currency a transaction changed

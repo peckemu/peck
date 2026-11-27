@@ -1,6 +1,6 @@
 import { Field, IncomingPacket, Packet } from '@peck/protocol'
 
-import { Incoming } from '#packets/incoming/headers'
+import { Incoming } from '../../headers/index.ts'
 
 /**
  * Answers an adventure's question

@@ -27,8 +27,8 @@ import {
 import { type Logger } from '@peck/logger'
 import { ShopListType } from '@peck/shared'
 
-import { Loader } from '#emulator/loaders/loader'
-import { LoggerToken } from '#emulator/tokens'
+import { Loader } from '../loader/index.ts'
+import { LoggerToken } from '../../tokens/index.ts'
 
 /**
  * The retired den room status

@@ -1,8 +1,8 @@
-import { Block } from '#database/entities/buddies/block'
-import { Buddy } from '#database/entities/buddies/buddy'
-import { BuddyRequest } from '#database/entities/buddies/request'
-import { UserVariable } from '#database/entities/variable'
-import { type Database, type Querier } from '#database/pool'
+import { Block } from '../../entities/buddies/block/index.ts'
+import { Buddy } from '../../entities/buddies/buddy/index.ts'
+import { BuddyRequest } from '../../entities/buddies/request/index.ts'
+import { UserVariable } from '../../entities/variable/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * The settings user variable

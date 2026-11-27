@@ -1,10 +1,10 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { Outgoing } from '#packets/outgoing/headers'
+import { Outgoing } from '../../headers/index.ts'
 import {
   type FramedDenItem,
   masterpieceFields,
-} from '#packets/outgoing/masterpiece'
+} from '../../masterpiece/index.ts'
 
 /**
  * A den item the player owns

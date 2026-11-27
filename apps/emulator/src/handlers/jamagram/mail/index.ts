@@ -16,9 +16,9 @@ import {
   type ShownJamagram,
 } from '@peck/packets'
 
-import { type Session } from '#emulator/sessions/session'
-import { SessionManager } from '#emulator/sessions/manager'
-import { LoggerToken } from '#emulator/tokens'
+import { type Session } from '../../../sessions/session/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { LoggerToken } from '../../../tokens/index.ts'
 
 /**
  * A card with clothing on it

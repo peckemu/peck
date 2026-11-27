@@ -7,7 +7,7 @@ import {
   Packet,
 } from '@peck/protocol'
 
-import { Incoming } from '#packets/incoming/headers'
+import { Incoming } from '../../headers/index.ts'
 
 /**
  * Reads a nick value

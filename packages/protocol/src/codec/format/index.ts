@@ -1,8 +1,8 @@
-import { type FieldNode, type FieldType } from '#protocol/codec/field'
-import { type Schema } from '#protocol/codec/schema'
-import { ProtocolError } from '#protocol/error'
-import { type Message, type PacketFormat } from '#protocol/wire/message'
-import { Numbers } from '#protocol/wire/numbers'
+import { type FieldNode, type FieldType } from '../field/index.ts'
+import { type Schema } from '../schema/index.ts'
+import { ProtocolError } from '../../error/index.ts'
+import { type Message, type PacketFormat } from '../../wire/message/index.ts'
+import { Numbers } from '../../wire/numbers/index.ts'
 
 /**
  * Where a value sits

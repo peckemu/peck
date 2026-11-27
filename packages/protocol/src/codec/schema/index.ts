@@ -1,4 +1,4 @@
-import { type FieldNode } from '#protocol/codec/field'
+import { type FieldNode } from '../field/index.ts'
 
 if ((Symbol as { metadata?: symbol }).metadata === undefined) {
   Object.defineProperty(Symbol, 'metadata', {

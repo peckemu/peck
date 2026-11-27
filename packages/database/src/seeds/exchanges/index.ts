@@ -1,7 +1,7 @@
 import { type EntityWrite } from 'uql-orm'
 
-import { ExchangeDefinition } from '#database/entities/definitions/exchange'
-import { DefinitionSeed, type Timed, timed } from '#database/seeds/definition'
+import { ExchangeDefinition } from '../../entities/definitions/exchange/index.ts'
+import { DefinitionSeed, type Timed, timed } from '../definition/index.ts'
 
 /**
  * Seeds the currency exchanges

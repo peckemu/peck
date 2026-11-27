@@ -10,7 +10,7 @@ import {
   sql,
 } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
+import { Player } from '../player/index.ts'
 
 /**
  * A player's chat command settings

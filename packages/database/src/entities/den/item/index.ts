@@ -9,7 +9,7 @@ import {
   sql,
 } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
+import { Player } from '../../player/index.ts'
 
 /**
  * A den item a player owns

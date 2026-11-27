@@ -2,8 +2,8 @@ import { join } from 'node:path'
 
 import { PluginHost, PluginLoader } from '@peck/plugins'
 
-import { commands } from '#console/commands'
-import { Console } from '#console/console'
+import { commands } from './commands/index.ts'
+import { Console } from './console/index.ts'
 
 /**
  * The plugins folder

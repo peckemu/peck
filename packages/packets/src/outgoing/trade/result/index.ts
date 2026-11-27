@@ -1,12 +1,9 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { Outgoing } from '#packets/outgoing/headers'
-import { masterpieceFields } from '#packets/outgoing/masterpiece'
-import { type ShownPet } from '#packets/outgoing/pet/list'
-import {
-  type TradedClothing,
-  type TradedDenItem,
-} from '#packets/outgoing/trade/list'
+import { Outgoing } from '../../headers/index.ts'
+import { masterpieceFields } from '../../masterpiece/index.ts'
+import { type ShownPet } from '../../pet/list/index.ts'
+import { type TradedClothing, type TradedDenItem } from '../list/index.ts'
 
 /**
  * What happened to a trade

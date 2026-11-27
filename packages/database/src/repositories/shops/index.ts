@@ -1,27 +1,27 @@
 import { CURRENCIES, type Currency } from '@peck/shared'
 
-import { Avatar } from '#database/entities/avatar'
-import { DenItem } from '#database/entities/den/item'
-import { DenShopListing } from '#database/entities/den/listing'
-import { DenRoom } from '#database/entities/den/room'
-import { DenShop } from '#database/entities/den/shop'
-import { Item } from '#database/entities/item'
-import { Masterpiece } from '#database/entities/masterpiece'
-import { Pet } from '#database/entities/pet'
-import { Player } from '#database/entities/player'
-import { ShopStock } from '#database/entities/shop/stock'
-import { TransactionCurrency } from '#database/entities/transactions/currency'
+import { Avatar } from '../../entities/avatar/index.ts'
+import { DenItem } from '../../entities/den/item/index.ts'
+import { DenShopListing } from '../../entities/den/listing/index.ts'
+import { DenRoom } from '../../entities/den/room/index.ts'
+import { DenShop } from '../../entities/den/shop/index.ts'
+import { Item } from '../../entities/item/index.ts'
+import { Masterpiece } from '../../entities/masterpiece/index.ts'
+import { Pet } from '../../entities/pet/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { ShopStock } from '../../entities/shop/stock/index.ts'
+import { TransactionCurrency } from '../../entities/transactions/currency/index.ts'
 import {
   TransactionItem,
   type TransactionItemKind,
-} from '#database/entities/transactions/item'
-import { TradeListing } from '#database/entities/trade/listing'
+} from '../../entities/transactions/item/index.ts'
+import { TradeListing } from '../../entities/trade/listing/index.ts'
 import {
   Transaction,
   type TransactionKind,
-} from '#database/entities/transactions/transaction'
-import { type Database, type Querier } from '#database/pool'
-import { type AvatarLook } from '#database/repositories/avatars'
+} from '../../entities/transactions/transaction/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
+import { type AvatarLook } from '../avatars/index.ts'
 
 /**
  * An amount of one currency

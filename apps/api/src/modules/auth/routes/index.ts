@@ -1,10 +1,10 @@
 import { Hono } from 'hono'
 
-import { validate, withAuth } from '#api/middleware'
-import { refreshSchema, signInSchema } from '#api/modules/auth/schemas'
-import { AuthService } from '#api/modules/auth/services'
-import { sessionView } from '#api/modules/auth/views'
-import { type Context } from '#api/types'
+import { validate, withAuth } from '../../../middleware/index.ts'
+import { refreshSchema, signInSchema } from '../schemas/index.ts'
+import { AuthService } from '../services/index.ts'
+import { sessionView } from '../views/index.ts'
+import { type Context } from '../../../types/index.ts'
 
 /**
  * The auth routes

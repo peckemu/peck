@@ -3,7 +3,7 @@ import {
   Referee,
   type SeatIndex,
   type Told,
-} from '#game/minigame/referee'
+} from '../../referee/index.ts'
 
 /**
  * The cards

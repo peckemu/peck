@@ -20,10 +20,10 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { DenView } from '#emulator/handlers/den/view'
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { DenView } from '../view/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
 
 /**
  * The ocean

@@ -1,5 +1,5 @@
-import { ProtocolError } from '#protocol/error'
-import { Message } from '#protocol/wire/message'
+import { ProtocolError } from '../../../error/index.ts'
+import { Message } from '../../message/index.ts'
 
 /**
  * Checks for a plain object

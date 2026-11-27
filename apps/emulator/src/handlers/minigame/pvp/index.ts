@@ -4,10 +4,10 @@ import { MinigamePvpIncoming, MinigamePvpOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 import { PvpAction } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { MinigameTables } from '#emulator/handlers/minigame/tables'
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { MinigameTables } from '../tables/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
 
 /**
  * Asks, accepts or turns down a two player game

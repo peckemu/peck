@@ -7,7 +7,7 @@ import {
   PlayerRepository,
 } from '@peck/database'
 
-import { ServiceError } from '#api/errors'
+import { ServiceError } from '../../../errors/index.ts'
 
 /**
  * Creates and reads accounts

@@ -3,8 +3,8 @@ import { type Lobby, MinigameCatalogue, Minigames } from '@peck/game'
 import { MinigameStartIncoming } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { MinigameTables } from '#emulator/handlers/minigame/tables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { MinigameTables } from '../tables/index.ts'
 
 /**
  * Starts a waiting minigame now

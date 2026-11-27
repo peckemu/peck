@@ -1,5 +1,5 @@
-import { Item } from '#database/entities/item'
-import { type Database } from '#database/pool'
+import { Item } from '../../entities/item/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * Reads and writes the items players own

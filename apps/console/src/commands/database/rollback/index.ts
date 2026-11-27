@@ -1,7 +1,7 @@
 import { createDatabase } from '@peck/database'
 import { Command, type Options, type PluginHost } from '@peck/plugins'
 
-import { CORE, migrationSets } from '#console/migrations'
+import { CORE, migrationSets } from '../../../migrations/index.ts'
 
 /**
  * Reverts migrations

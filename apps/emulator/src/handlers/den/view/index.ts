@@ -13,11 +13,11 @@ import {
 } from '@peck/packets'
 import { RoomJoinType } from '@peck/shared'
 
-import { type Config } from '#emulator/config'
-import { PartyVenues } from '#emulator/handlers/party/venue'
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
-import { ConfigToken } from '#emulator/tokens'
+import { type Config } from '../../../config/index.ts'
+import { PartyVenues } from '../../party/venue/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
+import { ConfigToken } from '../../../tokens/index.ts'
 
 /**
  * Shows players a den

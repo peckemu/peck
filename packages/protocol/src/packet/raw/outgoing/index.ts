@@ -1,6 +1,6 @@
-import { OutgoingPacket } from '#protocol/packet/outgoing'
-import { XtMessage } from '#protocol/wire/xt/message'
-import { XtWriter } from '#protocol/wire/xt/writer'
+import { OutgoingPacket } from '../../outgoing/index.ts'
+import { XtMessage } from '../../../wire/xt/message/index.ts'
+import { XtWriter } from '../../../wire/xt/writer/index.ts'
 
 /**
  * A raw XT packet

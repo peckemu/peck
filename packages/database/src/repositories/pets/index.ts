@@ -1,10 +1,10 @@
-import { Avatar } from '#database/entities/avatar'
-import { DenShopListing } from '#database/entities/den/listing'
-import { Pet } from '#database/entities/pet'
-import { Player } from '#database/entities/player'
-import { TransactionCurrency } from '#database/entities/transactions/currency'
-import { Transaction } from '#database/entities/transactions/transaction'
-import { type Database } from '#database/pool'
+import { Avatar } from '../../entities/avatar/index.ts'
+import { DenShopListing } from '../../entities/den/listing/index.ts'
+import { Pet } from '../../entities/pet/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { TransactionCurrency } from '../../entities/transactions/currency/index.ts'
+import { Transaction } from '../../entities/transactions/transaction/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * A den shop listing a pet

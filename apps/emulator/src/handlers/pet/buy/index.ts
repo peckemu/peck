@@ -4,8 +4,8 @@ import { PetBuyIncoming, PetCreateOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 import { ON_SALE } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PetAdoption } from '#emulator/handlers/pet/adoption'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PetAdoption } from '../adoption/index.ts'
 
 /**
  * The diamonds currency

@@ -1,9 +1,9 @@
 import { join } from 'node:path'
 
-import { type ContentExport } from '#content/exports'
-import { type ContentNetwork } from '#content/network'
-import { PackSet } from '#content/pack'
-import { Strings } from '#content/strings'
+import { type ContentExport } from '../exports/index.ts'
+import { type ContentNetwork } from '../network/index.ts'
+import { PackSet } from '../pack/index.ts'
+import { Strings } from '../strings/index.ts'
 
 /**
  * The English localisation pack

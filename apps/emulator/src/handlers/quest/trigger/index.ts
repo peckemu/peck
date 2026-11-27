@@ -11,9 +11,9 @@ import {
 import { Handler, PacketHandler } from '@peck/plugins'
 import { QuestActorType, QuestPrizeKind } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { QuestRunner } from '#emulator/handlers/quest/runner'
-import { type Session } from '#emulator/sessions/session'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { QuestRunner } from '../runner/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
 
 /**
  * Sets off an actor

@@ -1,14 +1,14 @@
-import { Avatar } from '#database/entities/avatar'
+import { Avatar } from '../../entities/avatar/index.ts'
 import {
   QuestDefinition,
   type StoredPrize,
-} from '#database/entities/definitions/quest'
-import { DenItem } from '#database/entities/den/item'
-import { Item } from '#database/entities/item'
-import { Player } from '#database/entities/player'
-import { QuestCompletion } from '#database/entities/quest/completion'
-import { QuestPrize } from '#database/entities/quest/prize'
-import { type Database, type Querier } from '#database/pool'
+} from '../../entities/definitions/quest/index.ts'
+import { DenItem } from '../../entities/den/item/index.ts'
+import { Item } from '../../entities/item/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { QuestCompletion } from '../../entities/quest/completion/index.ts'
+import { QuestPrize } from '../../entities/quest/prize/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * A den item prize

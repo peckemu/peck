@@ -3,7 +3,7 @@ import { join } from 'node:path'
 import { ContentExporter, ContentNetwork, EXPORTS } from '@peck/content'
 
 import { Command, type Options } from '@peck/plugins'
-import { saveEnv } from '#console/env'
+import { saveEnv } from '../../../env/index.ts'
 
 /**
  * The root of the repository

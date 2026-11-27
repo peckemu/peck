@@ -2,8 +2,8 @@ import {
   isPermission,
   type Permission,
   PERMISSION_KEYS,
-} from '#permissions/permissions'
-import { OWNER_RANK } from '#permissions/roles'
+} from '../permissions/index.ts'
+import { OWNER_RANK } from '../roles/index.ts'
 
 /**
  * A role

@@ -9,7 +9,7 @@ import {
 } from '@peck/packets'
 import { type AccountType } from '@peck/shared'
 
-import { type Session } from '#emulator/sessions/session'
+import { type Session } from '../session/index.ts'
 
 /**
  * The gems currency

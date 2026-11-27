@@ -1,7 +1,7 @@
 import { PluginLoader } from '@peck/plugins'
 
-import { config } from '#emulator/config'
-import { Emulator } from '#emulator/emulator'
+import { config } from './config/index.ts'
+import { Emulator } from './emulator/index.ts'
 
 const plugins = await PluginLoader.discover(
   config.plugins.directory,

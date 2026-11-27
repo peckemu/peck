@@ -4,8 +4,8 @@ import { TradeRules } from '@peck/game'
 import { TradeListChangeIncoming } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { TradeLists } from '#emulator/handlers/trade/lists'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { TradeLists } from '../lists/index.ts'
 
 /**
  * Changes the player's trade list

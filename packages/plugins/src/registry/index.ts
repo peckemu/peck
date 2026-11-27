@@ -1,6 +1,6 @@
 import { type IncomingPacket, type IncomingPacketType } from '@peck/protocol'
 
-import { type HandlerType } from '#plugins/handler'
+import { type HandlerType } from '../handler/index.ts'
 
 /**
  * The handler registry

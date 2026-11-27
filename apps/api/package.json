@@ -10,9 +10,6 @@
   "exports": {
     "./rpc": "./src/rpc/index.ts"
   },
-  "imports": {
-    "#api/*": "./src/*/index.ts"
-  },
   "dependencies": {
     "@hono/zod-validator": "0.9.1",
     "@needle-di/core": "1.2.1",

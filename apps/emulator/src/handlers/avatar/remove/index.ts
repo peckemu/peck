@@ -4,7 +4,7 @@ import { type Avatar, AvatarRules, type Item, type Player } from '@peck/game'
 import { AvatarRemoveIncoming, AvatarRemoveOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Removes one of the player's animals for gems

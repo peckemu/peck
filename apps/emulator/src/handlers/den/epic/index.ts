@@ -1,7 +1,7 @@
 import { DenEpicIncoming, DenEpicOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Lists the epic dens

@@ -8,14 +8,14 @@ import {
   type Point,
 } from '@peck/shared'
 
-import { Avatar, type AvatarOptions } from '#game/avatar'
-import { Buddies } from '#game/buddies'
-import { Den, type OwnedDenItem, type OwnedDenRoom } from '#game/den'
-import { Inventory } from '#game/inventory'
-import { Item, type ItemOptions } from '#game/item'
-import { Pet, type PetOptions } from '#game/pet'
-import { type Room } from '#game/room'
-import { Wallet } from '#game/wallet'
+import { Avatar, type AvatarOptions } from '../avatar/index.ts'
+import { Buddies } from '../buddies/index.ts'
+import { Den, type OwnedDenItem, type OwnedDenRoom } from '../den/index.ts'
+import { Inventory } from '../inventory/index.ts'
+import { Item, type ItemOptions } from '../item/index.ts'
+import { Pet, type PetOptions } from '../pet/index.ts'
+import { type Room } from '../room/index.ts'
+import { Wallet } from '../wallet/index.ts'
 
 /**
  * A user variable

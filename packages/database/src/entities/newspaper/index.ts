@@ -1,6 +1,6 @@
 import { Entity, Field, Id, type idKey, ManyToOne } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
+import { Player } from '../player/index.ts'
 
 /**
  * A newspaper a player has seen

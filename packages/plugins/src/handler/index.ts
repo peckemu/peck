@@ -1,7 +1,7 @@
 import { injectable } from '@needle-di/core'
 import { type IncomingPacket, type IncomingPacketType } from '@peck/protocol'
 
-import { type PacketContext } from '#plugins/context'
+import { type PacketContext } from '../context/index.ts'
 
 /**
  * A packet handler

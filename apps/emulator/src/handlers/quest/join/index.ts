@@ -3,8 +3,8 @@ import { Adventures, QuestCatalogue } from '@peck/game'
 import { QuestJoinIncoming, QuestJoinOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { QuestRunner } from '#emulator/handlers/quest/runner'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { QuestRunner } from '../runner/index.ts'
 
 /**
  * Joins or opens a public adventure

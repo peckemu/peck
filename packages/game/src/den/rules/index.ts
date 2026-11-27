@@ -1,7 +1,7 @@
 import { DenPrivacy } from '@peck/shared'
 
-import { type OwnedDenItem } from '#game/den'
-import { type Player } from '#game/player'
+import { type OwnedDenItem } from '../index.ts'
+import { type Player } from '../../player/index.ts'
 
 /**
  * A den item

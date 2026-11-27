@@ -2,25 +2,16 @@
   <img src=".github/banner.png" alt="Peck" width="670">
 </p>
 
-<p align="center">Peck is an open source server emulator for Animal Jam Classic, written in TypeScript with Bun.</p>
+<p align="center">Peck is an open source Animal Jam Classic emulator, built with <a href="https://bun.sh">Bun</a> and <a href="https://netifyjs.dev">Netify</a>.</p>
 
 ## Contents
 
-- [Only for fun/education purposes](#only-for-funeducation-purposes)
 - [Features](#features)
 - [Running it](#running-it)
 - [Limitations](#limitations)
 - [Contributing](#contributing)
 - [Disclaimer](#disclaimer)
 - [License](#license)
-
-## Only for fun/education purposes
-
-Peck started as the emulator inside Phantom, a project built over a few months of spare time, and is now released on its own.
-
-This is the TypeScript version, ported over with the copyrighted stuff taken out. It still gets worked on when there's time.
-
-Anyone can use it. If a few people learn how emulators work from it, that's good enough.
 
 ## Features
 
@@ -64,8 +55,6 @@ bun peck content:import
 bun run db:seed
 bun run dev
 ```
-
-I won't help you find the content. The importer is there, and if you're smart enough you'll figure out the rest.
 
 There are Dockerfiles for the emulator and the API. Build them from the repo root:
 

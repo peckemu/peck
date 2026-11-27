@@ -2,7 +2,7 @@ import { type Point } from '@peck/shared'
 
 import { Field, OutgoingPacket, Packet } from '@peck/protocol'
 
-import { Outgoing } from '#packets/outgoing/headers'
+import { Outgoing } from '../../headers/index.ts'
 
 /**
  * One avatar in a movement update

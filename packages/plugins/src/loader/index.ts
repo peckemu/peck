@@ -1,7 +1,7 @@
 import { readdir } from 'node:fs/promises'
 import { join } from 'node:path'
 
-import { Plugin } from '#plugins/plugin'
+import { Plugin } from '../plugin/index.ts'
 
 /**
  * A plugin's package.json

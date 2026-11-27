@@ -1,7 +1,7 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { type EarnedAchievement } from '#packets/outgoing/player/variable'
-import { Outgoing } from '#packets/outgoing/headers'
+import { type EarnedAchievement } from '../../player/variable/index.ts'
+import { Outgoing } from '../../headers/index.ts'
 
 /**
  * A player's achievements

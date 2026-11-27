@@ -2,8 +2,8 @@ import { join } from 'node:path'
 
 import { type SqlQuerier } from 'uql-orm'
 
-import { GenericListContent } from '#database/entities/definitions/list-content'
-import { Seed } from '#database/seeder'
+import { GenericListContent } from '../../entities/definitions/list-content/index.ts'
+import { Seed } from '../../seeder/index.ts'
 
 /**
  * The content folder

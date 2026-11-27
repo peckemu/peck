@@ -10,7 +10,7 @@ import {
   uuid,
 } from 'uql-orm'
 
-import { Account } from '#database/entities/accounts/account'
+import { Account } from '../account/index.ts'
 
 /**
  * A signed in session on an account

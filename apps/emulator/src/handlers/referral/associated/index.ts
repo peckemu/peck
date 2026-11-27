@@ -6,7 +6,7 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Says whether the player has a referrer

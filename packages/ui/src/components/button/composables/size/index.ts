@@ -1,6 +1,6 @@
 import { computed, type ComputedRef, type MaybeRefOrGetter, toValue } from 'vue'
 
-import { type ButtonSize } from '#ui/components/button/types'
+import { type ButtonSize } from '../../types/index.ts'
 
 /**
  * The classes for each size

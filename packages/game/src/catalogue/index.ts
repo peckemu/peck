@@ -1,4 +1,4 @@
-import { GameError } from '#game/error'
+import { GameError } from '../error/index.ts'
 
 /**
  * A definition

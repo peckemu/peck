@@ -1,6 +1,6 @@
 import { type Currency } from '@peck/shared'
 
-import { GameError } from '#game/error'
+import { GameError } from '../error/index.ts'
 
 /**
  * A player's balances

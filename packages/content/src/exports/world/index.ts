@@ -1,5 +1,5 @@
-import { ContentExport, type Row } from '#content/exports/export'
-import { type PackSet } from '#content/pack'
+import { ContentExport, type Row } from '../export/index.ts'
+import { type PackSet } from '../../pack/index.ts'
 
 /**
  * The world items pack

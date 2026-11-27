@@ -8,7 +8,7 @@ import {
   type Json,
 } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
+import { Player } from '../../player/index.ts'
 
 /**
  * A sticker on a wall

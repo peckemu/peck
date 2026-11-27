@@ -1,7 +1,7 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { type ListedBuddy } from '#packets/outgoing/buddy/list'
-import { Outgoing } from '#packets/outgoing/headers'
+import { type ListedBuddy } from '../list/index.ts'
+import { Outgoing } from '../../headers/index.ts'
 
 /**
  * Why a buddy changed

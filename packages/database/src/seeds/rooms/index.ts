@@ -1,7 +1,7 @@
 import { type EntityWrite } from 'uql-orm'
 
-import { RoomDefinition } from '#database/entities/definitions/room'
-import { DefinitionSeed } from '#database/seeds/definition'
+import { RoomDefinition } from '../../entities/definitions/room/index.ts'
+import { DefinitionSeed } from '../definition/index.ts'
 
 /**
  * Seeds the rooms

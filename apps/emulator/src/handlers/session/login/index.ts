@@ -27,12 +27,12 @@ import {
 import { can } from '@peck/permissions'
 import { LoginStatus } from '@peck/shared'
 
-import { BuddyService } from '#emulator/cluster/buddies'
-import { ClusterNode } from '#emulator/cluster/node'
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { TradeLists } from '#emulator/handlers/trade/lists'
-import { SessionManager } from '#emulator/sessions/manager'
-import { MasterpieceFrames } from '#emulator/handlers/masterpiece/frames'
+import { BuddyService } from '../../../cluster/buddies/index.ts'
+import { ClusterNode } from '../../../cluster/node/index.ts'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { TradeLists } from '../../trade/lists/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { MasterpieceFrames } from '../../masterpiece/frames/index.ts'
 
 /**
  * The zone the game logs in to

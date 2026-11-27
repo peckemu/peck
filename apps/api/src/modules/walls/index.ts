@@ -1,5 +1,5 @@
-import { type Module } from '#api/modules/module'
-import { wallsRouter } from '#api/modules/walls/routes'
+import { type Module } from '../module/index.ts'
+import { wallsRouter } from './routes/index.ts'
 
 /**
  * The Jammer Wall module

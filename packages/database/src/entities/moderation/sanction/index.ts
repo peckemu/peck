@@ -9,8 +9,8 @@ import {
   uuid,
 } from 'uql-orm'
 
-import { Account } from '#database/entities/accounts/account'
-import { Player } from '#database/entities/player'
+import { Account } from '../../accounts/account/index.ts'
+import { Player } from '../../player/index.ts'
 
 /**
  * Every kind of sanction

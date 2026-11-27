@@ -1,16 +1,20 @@
 import { Hono } from 'hono'
 
-import { validate, withAuth, withPermission } from '#api/middleware'
+import {
+  validate,
+  withAuth,
+  withPermission,
+} from '../../../middleware/index.ts'
 import {
   broadcastSchema,
   hostIdSchema,
   jamagramIdSchema,
   moderationIdSchema,
   redactSchema,
-} from '#api/modules/moderation/schemas'
-import { ModerationService } from '#api/modules/moderation/services'
-import { reportView, sanctionView } from '#api/modules/moderation/views'
-import { type Context } from '#api/types'
+} from '../schemas/index.ts'
+import { ModerationService } from '../services/index.ts'
+import { reportView, sanctionView } from '../views/index.ts'
+import { type Context } from '../../../types/index.ts'
 
 /**
  * The moderation routes

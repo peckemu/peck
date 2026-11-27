@@ -1,6 +1,6 @@
 import { Entity, Id, type idKey } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
+import { Player } from '../../player/index.ts'
 
 /**
  * A wall post a player hid

@@ -1,5 +1,5 @@
-import { ProtocolError, type ProtocolErrorCode } from '#protocol/error'
-import { Numbers } from '#protocol/wire/numbers'
+import { ProtocolError, type ProtocolErrorCode } from '../../error/index.ts'
+import { Numbers } from '../numbers/index.ts'
 
 /**
  * How SmartFox writes a message

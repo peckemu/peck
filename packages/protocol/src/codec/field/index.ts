@@ -1,5 +1,5 @@
-import { Schema } from '#protocol/codec/schema'
-import { type XmlMessage } from '#protocol/wire/xml/message'
+import { Schema } from '../schema/index.ts'
+import { type XmlMessage } from '../../wire/xml/message/index.ts'
 
 /**
  * A field's placement

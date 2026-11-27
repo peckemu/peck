@@ -1,7 +1,7 @@
 import { type SqlQuerier } from 'uql-orm'
 
-import { PartySchedule } from '#database/entities/party/schedule'
-import { Seed } from '#database/seeder'
+import { PartySchedule } from '../../entities/party/schedule/index.ts'
+import { Seed } from '../../seeder/index.ts'
 
 /**
  * The hourly parties

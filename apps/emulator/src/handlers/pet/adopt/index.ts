@@ -7,7 +7,7 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Lists a player's adopt a pet cards

@@ -1,7 +1,7 @@
 import { type EntityWrite } from 'uql-orm'
 
-import { DiamondDefinition } from '#database/entities/definitions/diamond'
-import { DefinitionSeed, type Timed, timed } from '#database/seeds/definition'
+import { DiamondDefinition } from '../../entities/definitions/diamond/index.ts'
+import { DefinitionSeed, type Timed, timed } from '../definition/index.ts'
 
 /**
  * Seeds the diamond shop

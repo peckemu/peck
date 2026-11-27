@@ -3,8 +3,8 @@ import { ClusterEvents, type StaffEvent } from '@peck/cluster'
 import { type Logger } from '@peck/logger'
 import { AdminMessageOutgoing } from '@peck/packets'
 
-import { SessionManager } from '#emulator/sessions/manager'
-import { LoggerToken } from '#emulator/tokens'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { LoggerToken } from '../../../tokens/index.ts'
 
 /**
  * Shows staff messages to every player

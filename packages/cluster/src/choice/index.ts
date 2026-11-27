@@ -1,4 +1,4 @@
-import { type NodeInfo } from '#cluster/nodes'
+import { type NodeInfo } from '../nodes/index.ts'
 
 /**
  * The node pack ratio

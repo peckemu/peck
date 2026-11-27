@@ -4,8 +4,8 @@ import { PublicChatIncoming, RoomChatOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 import { ChatKind } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { MinigameTables } from '#emulator/handlers/minigame/tables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { MinigameTables } from '../../minigame/tables/index.ts'
 
 /**
  * The typed chat kinds

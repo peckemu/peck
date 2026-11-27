@@ -1,4 +1,4 @@
-import { type Pack } from '#content/pack'
+import { type Pack } from '../pack/index.ts'
 
 /**
  * The placeholder string id

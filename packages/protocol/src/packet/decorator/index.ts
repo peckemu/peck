@@ -1,15 +1,9 @@
-import { Codecs } from '#protocol/codec/codecs'
-import { Schema } from '#protocol/codec/schema'
-import {
-  IncomingPacket,
-  type IncomingPacketType,
-} from '#protocol/packet/incoming'
-import {
-  OutgoingPacket,
-  type OutgoingPacketType,
-} from '#protocol/packet/outgoing'
-import { PacketRegistry } from '#protocol/packet/registry'
-import { type PacketFormat } from '#protocol/wire/message'
+import { Codecs } from '../../codec/codecs/index.ts'
+import { Schema } from '../../codec/schema/index.ts'
+import { IncomingPacket, type IncomingPacketType } from '../incoming/index.ts'
+import { OutgoingPacket, type OutgoingPacketType } from '../outgoing/index.ts'
+import { PacketRegistry } from '../registry/index.ts'
+import { type PacketFormat } from '../../wire/message/index.ts'
 
 /**
  * Every incoming packet class

@@ -1,9 +1,9 @@
 import { PendingFlag } from '@peck/shared'
 
-import { Avatar } from '#database/entities/avatar'
-import { Item } from '#database/entities/item'
-import { Player } from '#database/entities/player'
-import { type Database } from '#database/pool'
+import { Avatar } from '../../entities/avatar/index.ts'
+import { Item } from '../../entities/item/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * How a new animal looks

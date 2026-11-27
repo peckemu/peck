@@ -1,8 +1,8 @@
 import { PERMISSION_KEYS, PERMISSIONS } from '@peck/permissions'
 import { type SqlQuerier } from 'uql-orm'
 
-import { PermissionRow } from '#database/entities/access/permission'
-import { Seed } from '#database/seeder'
+import { PermissionRow } from '../../entities/access/permission/index.ts'
+import { Seed } from '../../seeder/index.ts'
 
 /**
  * Seeds the permissions

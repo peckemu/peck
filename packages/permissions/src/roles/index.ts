@@ -1,4 +1,4 @@
-import { type Permission, PERMISSION_KEYS } from '#permissions/permissions'
+import { type Permission, PERMISSION_KEYS } from '../permissions/index.ts'
 
 /**
  * The owner's rank

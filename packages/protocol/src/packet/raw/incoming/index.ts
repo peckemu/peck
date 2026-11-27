@@ -1,8 +1,8 @@
-import { ProtocolError } from '#protocol/error'
-import { IncomingPacket } from '#protocol/packet/incoming'
-import { type Message } from '#protocol/wire/message'
-import { XtMessage } from '#protocol/wire/xt/message'
-import { XtReader } from '#protocol/wire/xt/reader'
+import { ProtocolError } from '../../../error/index.ts'
+import { IncomingPacket } from '../../incoming/index.ts'
+import { type Message } from '../../../wire/message/index.ts'
+import { XtMessage } from '../../../wire/xt/message/index.ts'
+import { XtReader } from '../../../wire/xt/reader/index.ts'
 
 /**
  * An unknown packet

@@ -22,8 +22,8 @@ import {
 } from '@peck/database'
 import { createLogger, type Logger } from '@peck/logger'
 
-import { type Config } from '#api/config'
-import { ConfigToken, DatabaseToken, LoggerToken } from '#api/tokens'
+import { type Config } from '../config/index.ts'
+import { ConfigToken, DatabaseToken, LoggerToken } from '../tokens/index.ts'
 
 /**
  * The container options

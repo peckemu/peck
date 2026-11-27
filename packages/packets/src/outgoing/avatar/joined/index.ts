@@ -1,8 +1,8 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { RoomChatOutgoing } from '#packets/outgoing/chat/room'
-import { Outgoing } from '#packets/outgoing/headers'
-import { type ShownPet } from '#packets/outgoing/pet/list'
+import { RoomChatOutgoing } from '../../chat/room/index.ts'
+import { Outgoing } from '../../headers/index.ts'
+import { type ShownPet } from '../../pet/list/index.ts'
 
 /**
  * A player appearing in a room

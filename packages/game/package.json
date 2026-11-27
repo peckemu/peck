@@ -8,8 +8,5 @@
   },
   "dependencies": {
     "@peck/shared": "workspace:*"
-  },
-  "imports": {
-    "#game/*": "./src/*/index.ts"
   }
 }

@@ -1,162 +1,67 @@
-import { FrameDecoder, FrameEncoder } from '@peck/protocol'
-import { type Socket } from 'bun'
+import { type Channel } from '@netifyjs/netify'
 
-import { type Transport } from '#emulator/network/transport'
-
-/**
- * A frame waiting to be written
- */
-type Pending = {
-  /**
-   * The bytes not yet written
-   */
-  bytes: Uint8Array
-
-  /**
-   * The write callback
-   */
-  readonly resolve: () => void
-
-  /**
-   * Called on failure
-   */
-  readonly reject: (error: Error) => void
-}
+import { type Transport } from '../transport/index.ts'
 
 /**
- * A TCP connection
+ * A player's TCP connection
  * @class
  */
 export class Connection implements Transport {
   /**
-   * The shared encoder
-   */
-  private static readonly encoder = new FrameEncoder()
-
-  /**
-   * The address of the other end
+   * Where the player is connecting from
    */
   public readonly remoteAddress: string
 
   /**
-   * The socket
+   * Netify's side of it
    */
-  private readonly socket: Socket<unknown>
+  private readonly channel: Channel
 
   /**
-   * Collects incoming bytes into frames
+   * The newest write, so a close waits for it
    */
-  private readonly frames: FrameDecoder
+  private last: Promise<void> = Promise.resolve()
 
   /**
-   * The queued frames
-   */
-  private readonly queue: Pending[] = []
-
-  /**
-   * Whether the connection takes no more frames
+   * Set once a close has started
    */
   private ended = false
 
   /**
-   * The drain callback
+   * @param channel the channel the player is on
    */
-  private readonly waiting: (() => void)[] = []
-
-  /**
-   * Wraps a socket
-   * @param socket The socket
-   * @param maxFrameBytes The largest frame it accepts
-   */
-  public constructor(socket: Socket<unknown>, maxFrameBytes?: number) {
-    this.socket = socket
-    this.frames = new FrameDecoder(maxFrameBytes)
-    this.remoteAddress = socket.remoteAddress
+  public constructor(channel: Channel) {
+    this.channel = channel
+    this.remoteAddress = channel.remoteAddress
   }
 
   /**
-   * Whether the connection takes no more frames
-   * @returns Whether it is closed
+   * Whether it's stopped taking frames
    */
   public get closed(): boolean {
-    return this.ended
+    return this.ended || !this.channel.isActive
   }
 
   /**
-   * Feeds in a chunk of bytes
-   * @param chunk The bytes
-   * @returns The frames the chunk completed
-   */
-  public receive(chunk: Uint8Array): string[] {
-    return this.frames.push(chunk)
-  }
-
-  /**
-   * Queues a frame
-   * @param frame The frame
-   * @returns Once the frame is written
+   * Sends one frame
+   * @param frame text to send, without the NUL
    */
   public send(frame: string): Promise<void> {
-    if (this.ended) return Promise.reject(new Error('Connection is closed'))
-    const bytes = Connection.encoder.encode(frame)
-    return new Promise((resolve, reject) => {
-      this.queue.push({ bytes, resolve, reject })
-      if (this.queue.length === 1) this.flush()
-    })
+    if (this.closed) return Promise.reject(new Error('Connection is closed'))
+
+    const written = this.channel.writeAndFlush(frame)
+    this.last = written.catch(() => undefined)
+    return written
   }
 
   /**
-   * Writes the queue to the socket
-   */
-  public flush(): void {
-    let pending = this.queue[0]
-    while (pending) {
-      const written = this.socket.write(pending.bytes)
-      if (written < 0) {
-        this.abort()
-        return
-      }
-      if (written < pending.bytes.length) {
-        pending.bytes = pending.bytes.subarray(written)
-        return
-      }
-      this.queue.shift()
-      pending.resolve()
-      pending = this.queue[0]
-    }
-    this.settle()
-  }
-
-  /**
-   * Closes the socket
-   * @returns Once it is closed
+   * Hangs up once anything already sent has gone out
    */
   public async close(): Promise<void> {
     if (this.ended) return
-    this.ended = true
-    if (this.queue.length > 0) {
-      await new Promise<void>((resolve) => {
-        this.waiting.push(resolve)
-      })
-    }
-    this.frames.reset()
-    this.socket.end()
-  }
 
-  /**
-   * Drops everything queued
-   */
-  public abort(): void {
     this.ended = true
-    const error = new Error('Connection was lost')
-    for (const pending of this.queue.splice(0)) pending.reject(error)
-    this.settle()
-  }
-
-  /**
-   * Wakes anyone waiting on the queue
-   */
-  private settle(): void {
-    for (const resolve of this.waiting.splice(0)) resolve()
+    await this.last
+    await this.channel.close()
   }
 }

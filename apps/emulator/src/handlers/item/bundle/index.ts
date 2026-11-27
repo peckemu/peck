@@ -26,8 +26,8 @@ import {
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 import { InventoryLimit } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { type Session } from '#emulator/sessions/session'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
 
 /**
  * Buys a shop's whole bundle

@@ -7,8 +7,8 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { RewardDelivery } from '#emulator/sessions/rewards'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { RewardDelivery } from '../../../sessions/rewards/index.ts'
 
 /**
  * The longest code

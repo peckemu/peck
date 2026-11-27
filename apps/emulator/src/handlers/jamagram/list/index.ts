@@ -3,8 +3,8 @@ import { JamagramRepository } from '@peck/database'
 import { JamagramListIncoming, JamagramListOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { JamagramMail } from '#emulator/handlers/jamagram/mail'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { JamagramMail } from '../mail/index.ts'
 
 /**
  * Sends the player's Jam-a-Grams

@@ -1,9 +1,9 @@
-import { type Account } from '#database/entities/accounts/account'
-import { DenRoom } from '#database/entities/den/room'
-import { NewspaperSeen } from '#database/entities/newspaper'
-import { Player } from '#database/entities/player'
-import { UserVariable } from '#database/entities/variable'
-import { type Database } from '#database/pool'
+import { type Account } from '../../entities/accounts/account/index.ts'
+import { DenRoom } from '../../entities/den/room/index.ts'
+import { NewspaperSeen } from '../../entities/newspaper/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { UserVariable } from '../../entities/variable/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * The starting den

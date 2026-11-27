@@ -4,7 +4,7 @@ import { type Player, WallArt, type WallLook } from '@peck/game'
 import { WallParametersIncoming, WallParametersOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Changes how the player's wall looks

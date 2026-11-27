@@ -1,7 +1,7 @@
 import { type EntityWrite } from 'uql-orm'
 
-import { AchievementDefinition } from '#database/entities/definitions/achievement'
-import { DefinitionSeed } from '#database/seeds/definition'
+import { AchievementDefinition } from '../../entities/definitions/achievement/index.ts'
+import { DefinitionSeed } from '../definition/index.ts'
 
 /**
  * Seeds the achievements

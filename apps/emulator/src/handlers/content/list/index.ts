@@ -15,7 +15,7 @@ import {
 import { Handler, PacketHandler } from '@peck/plugins'
 import { PacketFactory } from '@peck/protocol'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * A list of media

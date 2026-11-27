@@ -2,8 +2,8 @@ import { join } from 'node:path'
 
 import { type SqlQuerier } from 'uql-orm'
 
-import { MinigameDefinition } from '#database/entities/definitions/minigame'
-import { Seed } from '#database/seeder'
+import { MinigameDefinition } from '../../entities/definitions/minigame/index.ts'
+import { Seed } from '../../seeder/index.ts'
 
 /**
  * The content folder

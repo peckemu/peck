@@ -1,11 +1,11 @@
 import { AccountType } from '@peck/shared'
 import { type SqlQuerier } from 'uql-orm'
 
-import { RoleAssignment } from '#database/entities/access/assignment'
-import { Role } from '#database/entities/access/role'
-import { Account } from '#database/entities/accounts/account'
-import { Player } from '#database/entities/player'
-import { Seed } from '#database/seeder'
+import { RoleAssignment } from '../../entities/access/assignment/index.ts'
+import { Role } from '../../entities/access/role/index.ts'
+import { Account } from '../../entities/accounts/account/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { Seed } from '../../seeder/index.ts'
 
 /**
  * The development accounts

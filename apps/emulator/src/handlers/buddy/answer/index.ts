@@ -9,10 +9,10 @@ import {
 import { Handler, PacketHandler } from '@peck/plugins'
 import { UserVar } from '@peck/shared'
 
-import { BuddyService } from '#emulator/cluster/buddies'
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerFinder } from '#emulator/sessions/finder'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { BuddyService } from '../../../cluster/buddies/index.ts'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PlayerFinder } from '../../../sessions/finder/index.ts'
+import { PlayerVariables } from '../../../sessions/variables/index.ts'
 
 /**
  * Answers a buddy request

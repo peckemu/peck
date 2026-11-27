@@ -1,10 +1,10 @@
 import { AccountType } from '@peck/shared'
 
-import { type CodeItem } from '#database/entities/codes/code'
-import { DenItem } from '#database/entities/den/item'
-import { Item } from '#database/entities/item'
-import { Player } from '#database/entities/player'
-import { type Database, type Querier } from '#database/pool'
+import { type CodeItem } from '../../entities/codes/code/index.ts'
+import { DenItem } from '../../entities/den/item/index.ts'
+import { Item } from '../../entities/item/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * What a reward gives

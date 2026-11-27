@@ -13,10 +13,10 @@ import {
 import { type PacketSession, PluginEvents } from '@peck/plugins'
 import { UserVar } from '@peck/shared'
 
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
-import { PlayerVariables } from '#emulator/sessions/variables'
-import { LoggerToken } from '#emulator/tokens'
+import { SessionManager } from '../../sessions/manager/index.ts'
+import { type Session } from '../../sessions/session/index.ts'
+import { PlayerVariables } from '../../sessions/variables/index.ts'
+import { LoggerToken } from '../../tokens/index.ts'
 
 /**
  * The presence refresh interval

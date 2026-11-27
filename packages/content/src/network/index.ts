@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto'
 
-import { ContentError } from '#content/error'
-import { Pack } from '#content/pack'
+import { ContentError } from '../error/index.ts'
+import { Pack } from '../pack/index.ts'
 
 /**
  * The content network's addresses

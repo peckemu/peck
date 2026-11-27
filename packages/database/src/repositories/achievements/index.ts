@@ -1,6 +1,6 @@
-import { Achievement } from '#database/entities/achievement'
-import { Player } from '#database/entities/player'
-import { type Database } from '#database/pool'
+import { Achievement } from '../../entities/achievement/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * An achievement a player holds

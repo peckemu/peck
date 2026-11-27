@@ -1,5 +1,5 @@
-import { type Module } from '#api/modules/module'
-import { accountsRouter } from '#api/modules/accounts/routes'
+import { type Module } from '../module/index.ts'
+import { accountsRouter } from './routes/index.ts'
 
 /**
  * The accounts module

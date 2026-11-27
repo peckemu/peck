@@ -1,11 +1,11 @@
 import { TradeKind } from '@peck/shared'
 
-import { type DenItemCatalogue } from '#game/content/den-item'
-import { type ItemCatalogue } from '#game/content/item'
-import { Den, type OwnedDenItem } from '#game/den'
-import { type Item } from '#game/item'
-import { type Pet } from '#game/pet'
-import { type Player } from '#game/player'
+import { type DenItemCatalogue } from '../content/den-item/index.ts'
+import { type ItemCatalogue } from '../content/item/index.ts'
+import { Den, type OwnedDenItem } from '../den/index.ts'
+import { type Item } from '../item/index.ts'
+import { type Pet } from '../pet/index.ts'
+import { type Player } from '../player/index.ts'
 
 /**
  * The item types by trade kind

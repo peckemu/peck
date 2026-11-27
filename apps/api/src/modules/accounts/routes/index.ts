@@ -1,10 +1,10 @@
 import { Hono } from 'hono'
 
-import { validate, withAuth } from '#api/middleware'
-import { registerSchema } from '#api/modules/accounts/schemas'
-import { AccountService } from '#api/modules/accounts/services'
-import { accountView, playerView } from '#api/modules/accounts/views'
-import { type Context } from '#api/types'
+import { validate, withAuth } from '../../../middleware/index.ts'
+import { registerSchema } from '../schemas/index.ts'
+import { AccountService } from '../services/index.ts'
+import { accountView, playerView } from '../views/index.ts'
+import { type Context } from '../../../types/index.ts'
 
 /**
  * The account routes

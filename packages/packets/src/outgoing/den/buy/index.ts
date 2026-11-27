@@ -1,7 +1,7 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { BuyStatus } from '#packets/outgoing/item/buy'
-import { Outgoing } from '#packets/outgoing/headers'
+import { BuyStatus } from '../../item/buy/index.ts'
+import { Outgoing } from '../../headers/index.ts'
 
 /**
  * Whether a den item or den room was bought

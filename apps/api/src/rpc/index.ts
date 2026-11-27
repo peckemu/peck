@@ -1,1 +1,1 @@
-export { type AppType } from '#api/modules'
+export { type AppType } from '../modules/index.ts'

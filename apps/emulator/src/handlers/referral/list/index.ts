@@ -4,7 +4,7 @@ import { ReferralListIncoming, ReferralListOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 import { AccountType } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * The largest page

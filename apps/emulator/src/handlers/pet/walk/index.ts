@@ -3,8 +3,8 @@ import { PetRepository } from '@peck/database'
 import { PetRules } from '@peck/game'
 import { PetSwitchOutgoing } from '@peck/packets'
 
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
 
 /**
  * Brings pets out

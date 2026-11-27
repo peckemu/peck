@@ -1,7 +1,7 @@
 import { type EntityWrite } from 'uql-orm'
 
-import { DenRoomDefinition } from '#database/entities/definitions/den-room'
-import { DefinitionSeed, type Timed, timed } from '#database/seeds/definition'
+import { DenRoomDefinition } from '../../entities/definitions/den-room/index.ts'
+import { DefinitionSeed, type Timed, timed } from '../definition/index.ts'
 
 /**
  * Seeds the dens

@@ -1,4 +1,4 @@
-import { type Strings } from '#content/strings'
+import { type Strings } from '../strings/index.ts'
 
 /**
  * The avatar creator's name wheels

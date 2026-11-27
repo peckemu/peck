@@ -4,8 +4,8 @@ import { DenRules, RoomManager } from '@peck/game'
 import { DenEmptyIncoming, DenEmptyOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { SessionManager } from '#emulator/sessions/manager'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
 
 /**
  * Empties the player's den

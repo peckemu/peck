@@ -10,7 +10,7 @@ import { AvatarFastPassIncoming, AvatarFastPassOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 import { AccountType, PendingFlag } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * The land animal bit

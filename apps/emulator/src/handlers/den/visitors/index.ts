@@ -5,8 +5,8 @@ import { type Logger } from '@peck/logger'
 import { DenVisitorsOutgoing } from '@peck/packets'
 import { type PacketSession, PluginEvents } from '@peck/plugins'
 
-import { SessionManager } from '#emulator/sessions/manager'
-import { LoggerToken } from '#emulator/tokens'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { LoggerToken } from '../../../tokens/index.ts'
 
 /**
  * The events this listens for

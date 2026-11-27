@@ -5,8 +5,8 @@ import { DenEcoStateIncoming, DenEcoStateOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 import { UserVar } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { DenEcoSystem } from '#emulator/handlers/den/eco/system'
+import { type HandlerContext } from '../../../../dispatch/context/index.ts'
+import { DenEcoSystem } from '../system/index.ts'
 
 /**
  * Describes the den's eco system

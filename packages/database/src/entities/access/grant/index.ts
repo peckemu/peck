@@ -8,9 +8,9 @@ import {
   ManyToOne,
 } from 'uql-orm'
 
-import { Account } from '#database/entities/accounts/account'
-import { PermissionRow } from '#database/entities/access/permission'
-import { Role } from '#database/entities/access/role'
+import { Account } from '../../accounts/account/index.ts'
+import { PermissionRow } from '../permission/index.ts'
+import { Role } from '../role/index.ts'
 
 /**
  * A permission a role holds

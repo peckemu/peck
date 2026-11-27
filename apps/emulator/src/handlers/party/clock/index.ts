@@ -3,10 +3,10 @@ import { HostedParties, RoomManager } from '@peck/game'
 
 import { RoomJoinType } from '@peck/shared'
 
-import { type Config } from '#emulator/config'
-import { PartyVenues } from '#emulator/handlers/party/venue'
-import { SessionManager } from '#emulator/sessions/manager'
-import { ConfigToken } from '#emulator/tokens'
+import { type Config } from '../../../config/index.ts'
+import { PartyVenues } from '../venue/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { ConfigToken } from '../../../tokens/index.ts'
 
 /**
  * The party cleanup interval

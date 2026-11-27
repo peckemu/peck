@@ -1,16 +1,16 @@
-import { AchievementsExport } from '#content/exports/achievements'
-import { AvatarsExport } from '#content/exports/avatars'
-import { DenItemsExport } from '#content/exports/den-items'
-import { DenRoomsExport } from '#content/exports/den-rooms'
-import { DiamondsExport } from '#content/exports/diamonds'
-import { ExchangesExport } from '#content/exports/exchanges'
-import { type ContentExport } from '#content/exports/export'
-import { ItemsExport } from '#content/exports/items'
-import { ListsExport } from '#content/exports/lists'
-import { PartiesExport } from '#content/exports/parties'
-import { PetsExport } from '#content/exports/pets'
-import { RoomsExport } from '#content/exports/rooms'
-import { WorldItemsExport } from '#content/exports/world'
+import { AchievementsExport } from './achievements/index.ts'
+import { AvatarsExport } from './avatars/index.ts'
+import { DenItemsExport } from './den-items/index.ts'
+import { DenRoomsExport } from './den-rooms/index.ts'
+import { DiamondsExport } from './diamonds/index.ts'
+import { ExchangesExport } from './exchanges/index.ts'
+import { type ContentExport } from './export/index.ts'
+import { ItemsExport } from './items/index.ts'
+import { ListsExport } from './lists/index.ts'
+import { PartiesExport } from './parties/index.ts'
+import { PetsExport } from './pets/index.ts'
+import { RoomsExport } from './rooms/index.ts'
+import { WorldItemsExport } from './world/index.ts'
 
 /**
  * Every export
@@ -30,7 +30,7 @@ export const EXPORTS: readonly ContentExport[] = [
   new WorldItemsExport(),
 ]
 
-export { ContentExport, type Row } from '#content/exports/export'
+export { ContentExport, type Row } from './export/index.ts'
 export {
   AchievementsExport,
   AvatarsExport,

@@ -1,6 +1,6 @@
 import { Field, OutgoingPacket, Packet } from '@peck/protocol'
 
-import { Outgoing } from '#packets/outgoing/headers'
+import { Outgoing } from '../headers/index.ts'
 
 /**
  * How many like something

@@ -1,8 +1,8 @@
 import { createHash, randomBytes } from 'node:crypto'
 
-import { type Account } from '#database/entities/accounts/account'
-import { Session } from '#database/entities/accounts/session'
-import { type Database } from '#database/pool'
+import { type Account } from '../../entities/accounts/account/index.ts'
+import { Session } from '../../entities/accounts/session/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * How long a session token lasts

@@ -1,9 +1,9 @@
 import { type Seed } from '@peck/database'
 
-import { type Command } from '#plugins/command'
-import { type HandlerType } from '#plugins/handler'
-import { type Middleware } from '#plugins/middleware'
-import { type Plugin, type PluginContext } from '#plugins/plugin'
+import { type Command } from '../command/index.ts'
+import { type HandlerType } from '../handler/index.ts'
+import { type Middleware } from '../middleware/index.ts'
+import { type Plugin, type PluginContext } from '../plugin/index.ts'
 
 /**
  * A plugin's migrations

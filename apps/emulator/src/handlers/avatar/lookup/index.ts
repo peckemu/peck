@@ -8,9 +8,9 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerFinder } from '#emulator/sessions/finder'
-import { SessionManager } from '#emulator/sessions/manager'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PlayerFinder } from '../../../sessions/finder/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
 
 /**
  * Looks a player up by name

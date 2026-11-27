@@ -1,5 +1,5 @@
-import { type Module } from '#api/modules/module'
-import { healthRouter } from '#api/modules/health/routes'
+import { type Module } from '../module/index.ts'
+import { healthRouter } from './routes/index.ts'
 
 /**
  * The health module

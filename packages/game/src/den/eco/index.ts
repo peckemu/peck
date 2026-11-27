@@ -1,5 +1,5 @@
-import { type DenItemCatalogue } from '#game/content/den-item'
-import { type OwnedDenItem } from '#game/den'
+import { type DenItemCatalogue } from '../../content/den-item/index.ts'
+import { type OwnedDenItem } from '../index.ts'
 
 /**
  * The wind turbine

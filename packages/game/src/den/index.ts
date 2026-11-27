@@ -1,6 +1,6 @@
 import { type Point } from '@peck/shared'
 
-import { GameError } from '#game/error'
+import { GameError } from '../error/index.ts'
 
 /**
  * Where an item stands in the den

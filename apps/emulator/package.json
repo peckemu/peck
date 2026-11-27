@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@needle-di/core": "1.2.1",
+    "@netifyjs/netify": "1.0.0-alpha.6",
     "@peck/cluster": "workspace:*",
     "@peck/database": "workspace:*",
     "@peck/game": "workspace:*",
@@ -19,8 +20,5 @@
     "@peck/protocol": "workspace:*",
     "@peck/redis": "workspace:*",
     "@peck/shared": "workspace:*"
-  },
-  "imports": {
-    "#emulator/*": "./src/*/index.ts"
   }
 }

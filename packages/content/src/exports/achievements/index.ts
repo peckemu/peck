@@ -1,6 +1,6 @@
-import { ContentExport, type Row } from '#content/exports/export'
-import { type PackSet } from '#content/pack'
-import { type Strings } from '#content/strings'
+import { ContentExport, type Row } from '../export/index.ts'
+import { type PackSet } from '../../pack/index.ts'
+import { type Strings } from '../../strings/index.ts'
 
 /**
  * Exports the achievement pack

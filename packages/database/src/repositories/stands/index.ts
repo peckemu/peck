@@ -1,14 +1,14 @@
 import { CURRENCIES } from '@peck/shared'
 
-import { DenItem } from '#database/entities/den/item'
-import { DenShopListing } from '#database/entities/den/listing'
-import { DenShop } from '#database/entities/den/shop'
-import { Item } from '#database/entities/item'
-import { Player } from '#database/entities/player'
-import { TransactionCurrency } from '#database/entities/transactions/currency'
-import { TransactionItem } from '#database/entities/transactions/item'
-import { Transaction } from '#database/entities/transactions/transaction'
-import { type Database, type Querier } from '#database/pool'
+import { DenItem } from '../../entities/den/item/index.ts'
+import { DenShopListing } from '../../entities/den/listing/index.ts'
+import { DenShop } from '../../entities/den/shop/index.ts'
+import { Item } from '../../entities/item/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { TransactionCurrency } from '../../entities/transactions/currency/index.ts'
+import { TransactionItem } from '../../entities/transactions/item/index.ts'
+import { Transaction } from '../../entities/transactions/transaction/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * What can go on a stand

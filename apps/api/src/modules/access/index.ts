@@ -1,5 +1,5 @@
-import { accessRouter } from '#api/modules/access/routes'
-import { type Module } from '#api/modules/module'
+import { accessRouter } from './routes/index.ts'
+import { type Module } from '../module/index.ts'
 
 /**
  * The access module

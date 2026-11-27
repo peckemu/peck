@@ -2,8 +2,8 @@ import { inject } from '@needle-di/core'
 import { DenMasterpiecesIncoming, DenMasterpiecesOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerFinder } from '#emulator/sessions/finder'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PlayerFinder } from '../../../sessions/finder/index.ts'
 
 /**
  * Lists the masterpieces placed in a den

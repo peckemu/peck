@@ -1,8 +1,8 @@
 import { Hono } from 'hono'
 
-import { withAuth } from '#api/middleware'
-import { PlayService } from '#api/modules/play/services'
-import { type Context } from '#api/types'
+import { withAuth } from '../../../middleware/index.ts'
+import { PlayService } from '../services/index.ts'
+import { type Context } from '../../../types/index.ts'
 
 /**
  * The play routes

@@ -1,4 +1,4 @@
-import { ContentError } from '#content/error'
+import { ContentError } from '../error/index.ts'
 
 /**
  * An object read from AMF3

@@ -3,8 +3,8 @@ import { Minigames } from '@peck/game'
 import { RoomLeaveIncoming } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { MinigameTables } from '#emulator/handlers/minigame/tables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { MinigameTables } from '../../minigame/tables/index.ts'
 
 /**
  * Leaves a game inside the room

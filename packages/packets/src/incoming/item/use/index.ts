@@ -1,6 +1,6 @@
 import { Field, IncomingPacket, Packet } from '@peck/protocol'
 
-import { Incoming } from '#packets/incoming/headers'
+import { Incoming } from '../../headers/index.ts'
 
 /**
  * Puts clothing on and takes it off

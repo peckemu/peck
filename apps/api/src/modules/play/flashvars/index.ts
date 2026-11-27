@@ -1,7 +1,7 @@
 import { type NodeInfo } from '@peck/cluster'
 
-import { type Config } from '#api/config'
-import { ServiceError } from '#api/errors'
+import { type Config } from '../../../config/index.ts'
+import { ServiceError } from '../../../errors/index.ts'
 
 /**
  * The game's flashvars

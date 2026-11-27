@@ -4,7 +4,7 @@ import { RoomManager } from '@peck/game'
 import { BuddyWhereIncoming, BuddyWhereOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * The den name prefix

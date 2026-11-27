@@ -28,11 +28,6 @@ export type Limits = {
   readonly packetBurst: number
 
   /**
-   * The max queued chunks
-   */
-  readonly maxQueuedChunks: number
-
-  /**
    * The refused packets a connection may send
    */
   readonly maxRefused: number
@@ -52,7 +47,6 @@ export const DEFAULT_LIMITS: Limits = {
   maxConnectionsPerAddress: 10,
   packetRate: 30,
   packetBurst: 60,
-  maxQueuedChunks: 32,
   maxRefused: 20,
   loginTimeoutMs: 15_000,
 }

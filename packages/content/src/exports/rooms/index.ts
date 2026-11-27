@@ -1,6 +1,6 @@
-import { ContentExport, type Row } from '#content/exports/export'
-import { areaName, ROOM_NAMES } from '#content/names'
-import { type PackSet } from '#content/pack'
+import { ContentExport, type Row } from '../export/index.ts'
+import { areaName, ROOM_NAMES } from '../../names/index.ts'
+import { type PackSet } from '../../pack/index.ts'
 
 /**
  * Exports the rooms pack

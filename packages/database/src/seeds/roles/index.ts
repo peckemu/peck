@@ -1,9 +1,9 @@
 import { ROLE_KEYS, ROLES } from '@peck/permissions'
 import { type SqlQuerier } from 'uql-orm'
 
-import { RoleGrant } from '#database/entities/access/grant'
-import { Role } from '#database/entities/access/role'
-import { Seed } from '#database/seeder'
+import { RoleGrant } from '../../entities/access/grant/index.ts'
+import { Role } from '../../entities/access/role/index.ts'
+import { Seed } from '../../seeder/index.ts'
 
 /**
  * Seeds the Peck roles

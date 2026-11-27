@@ -3,8 +3,8 @@ import { PetRepository } from '@peck/database'
 import { PetMasteryIncoming, PetMasteryOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PetWalk } from '#emulator/handlers/pet/walk'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PetWalk } from '../walk/index.ts'
 
 /**
  * The mastery points the badge needs

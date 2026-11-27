@@ -3,7 +3,7 @@ import {
   XML_CDATA,
   XML_TEXT_NODE,
   type XmlNode,
-} from '#protocol/wire/xml/node'
+} from '../../wire/xml/node/index.ts'
 
 /**
  * A builder element

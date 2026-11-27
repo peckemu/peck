@@ -2,14 +2,14 @@ import XmlBuilder from 'fast-xml-builder'
 import { XMLParser } from 'fast-xml-parser'
 import { SyntaxValidator } from 'fast-xml-validator'
 
-import { ProtocolError } from '#protocol/error'
-import { Message } from '#protocol/wire/message'
+import { ProtocolError } from '../../../error/index.ts'
+import { Message } from '../../message/index.ts'
 import {
   XML_ATTRIBUTE_PREFIX,
   XML_CDATA,
   XML_TEXT_NODE,
   XmlNode,
-} from '#protocol/wire/xml/node'
+} from '../node/index.ts'
 
 /**
  * Matches the body tag

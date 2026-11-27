@@ -2,11 +2,11 @@ import { type Token } from '@needle-di/core'
 import { type Database, type Seed } from '@peck/database'
 import { type Logger } from '@peck/logger'
 
-import { type Command } from '#plugins/command'
-import { type PacketSessions } from '#plugins/context'
-import { type PluginEvents } from '#plugins/events'
-import { type HandlerType } from '#plugins/handler'
-import { type Middleware } from '#plugins/middleware'
+import { type Command } from '../command/index.ts'
+import { type PacketSessions } from '../context/index.ts'
+import { type PluginEvents } from '../events/index.ts'
+import { type HandlerType } from '../handler/index.ts'
+import { type Middleware } from '../middleware/index.ts'
 
 /**
  * A plugin context

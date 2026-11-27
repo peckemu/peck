@@ -1,6 +1,6 @@
 import { type QuestPrizeKind } from '@peck/shared'
 
-import { Catalogue } from '#game/catalogue'
+import { Catalogue } from '../../catalogue/index.ts'
 
 /**
  * Who an adventure is for

@@ -1,11 +1,11 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { Outgoing } from '#packets/outgoing/headers'
+import { Outgoing } from '../../headers/index.ts'
 import {
   type FramedDenItem,
   shownMasterpiece,
-} from '#packets/outgoing/masterpiece'
-import { type ShownPet } from '#packets/outgoing/pet/list'
+} from '../../masterpiece/index.ts'
+import { type ShownPet } from '../../pet/list/index.ts'
 
 /**
  * A den item placed in the den

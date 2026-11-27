@@ -1,6 +1,6 @@
 import { OutgoingPacket, Packet } from '@peck/protocol'
 
-import { Outgoing } from '#packets/outgoing/headers'
+import { Outgoing } from '../../headers/index.ts'
 
 /**
  * The email was validated

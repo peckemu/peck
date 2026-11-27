@@ -19,7 +19,7 @@ import {
   roleProblems,
 } from '@peck/permissions'
 
-import { ServiceError } from '#api/errors'
+import { ServiceError } from '../../../errors/index.ts'
 
 /**
  * What an account may do

@@ -1,5 +1,5 @@
-import { masterpiecesRouter } from '#api/modules/masterpieces/routes'
-import { type Module } from '#api/modules/module'
+import { masterpiecesRouter } from './routes/index.ts'
+import { type Module } from '../module/index.ts'
 
 /**
  * The masterpieces module

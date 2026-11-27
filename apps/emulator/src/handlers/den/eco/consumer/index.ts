@@ -3,9 +3,9 @@ import { EcoRules, EcoSwitch, type OwnedDenItem, type Player } from '@peck/game'
 import { DenEcoConsumerIncoming, DenEcoConsumerOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { DenEcoSystem } from '#emulator/handlers/den/eco/system'
-import { SessionManager } from '#emulator/sessions/manager'
+import { type HandlerContext } from '../../../../dispatch/context/index.ts'
+import { DenEcoSystem } from '../system/index.ts'
+import { SessionManager } from '../../../../sessions/manager/index.ts'
 
 /**
  * Switches a den eco item on or off

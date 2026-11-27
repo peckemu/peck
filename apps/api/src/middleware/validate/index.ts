@@ -2,7 +2,7 @@ import { zValidator } from '@hono/zod-validator'
 import { type MiddlewareHandler, type ValidationTargets } from 'hono'
 import { type z, type ZodType } from 'zod'
 
-import { type Context } from '#api/types'
+import { type Context } from '../../types/index.ts'
 
 /**
  * Request validation middleware

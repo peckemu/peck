@@ -15,10 +15,10 @@ import {
 } from '@peck/database'
 import { type Logger } from '@peck/logger'
 
-import { ServiceError } from '#api/errors'
-import { Pictures } from '#api/modules/masterpieces/images'
-import { MasterpiecePictures } from '#api/modules/masterpieces/pictures'
-import { LoggerToken } from '#api/tokens'
+import { ServiceError } from '../../../errors/index.ts'
+import { Pictures } from '../images/index.ts'
+import { MasterpiecePictures } from '../pictures/index.ts'
+import { LoggerToken } from '../../../tokens/index.ts'
 
 /**
  * The upload reply

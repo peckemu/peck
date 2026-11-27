@@ -4,11 +4,8 @@ import { type Player } from '@peck/game'
 import { ReportEvidenceIncoming, ReportEvidenceOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import {
-  type ModerationTarget,
-  ModerationTools,
-} from '#emulator/handlers/moderation/tools'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { type ModerationTarget, ModerationTools } from '../tools/index.ts'
 
 /**
  * The longest data

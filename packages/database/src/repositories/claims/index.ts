@@ -1,9 +1,9 @@
-import { WorldItemClaim } from '#database/entities/claim'
-import { DenItem } from '#database/entities/den/item'
-import { Item } from '#database/entities/item'
-import { Player } from '#database/entities/player'
-import { UserVariable } from '#database/entities/variable'
-import { type Database, type Querier } from '#database/pool'
+import { WorldItemClaim } from '../../entities/claim/index.ts'
+import { DenItem } from '../../entities/den/item/index.ts'
+import { Item } from '../../entities/item/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { UserVariable } from '../../entities/variable/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * The bit field variable type

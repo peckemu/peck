@@ -1,8 +1,8 @@
-import { MinigameDefinition } from '#database/entities/definitions/minigame'
-import { MinigameDay } from '#database/entities/minigame/day'
-import { MinigameScore } from '#database/entities/minigame/score'
-import { Player } from '#database/entities/player'
-import { type Database, type Querier } from '#database/pool'
+import { MinigameDefinition } from '../../entities/definitions/minigame/index.ts'
+import { MinigameDay } from '../../entities/minigame/day/index.ts'
+import { MinigameScore } from '../../entities/minigame/score/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * How many players a board shows

@@ -5,12 +5,15 @@ import {
   RECYCLE_PERCENTAGE,
 } from '@peck/shared'
 
-import { type DenItemCatalogue } from '#game/content/den-item'
-import { type DenRoomCatalogue } from '#game/content/den-room'
-import { type DiamondCatalogue, DiamondType } from '#game/content/diamond'
-import { type ExchangeCatalogue } from '#game/content/exchange'
-import { type ItemCatalogue } from '#game/content/item'
-import { type Wallet } from '#game/wallet'
+import { type DenItemCatalogue } from '../../content/den-item/index.ts'
+import { type DenRoomCatalogue } from '../../content/den-room/index.ts'
+import {
+  type DiamondCatalogue,
+  DiamondType,
+} from '../../content/diamond/index.ts'
+import { type ExchangeCatalogue } from '../../content/exchange/index.ts'
+import { type ItemCatalogue } from '../../content/item/index.ts'
+import { type Wallet } from '../../wallet/index.ts'
 
 /**
  * The diamonds currency

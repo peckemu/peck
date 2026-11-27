@@ -5,11 +5,15 @@ import { secureHeaders } from 'hono/secure-headers'
 import { type Container } from '@needle-di/core'
 import { type Logger } from '@peck/logger'
 
-import { ServiceError, type ServiceErrorCode } from '#api/errors'
-import { exceptFlash, withContainer, withRequestLog } from '#api/middleware'
-import { routes } from '#api/modules'
-import { LoggerToken } from '#api/tokens'
-import { type Context } from '#api/types'
+import { ServiceError, type ServiceErrorCode } from '../errors/index.ts'
+import {
+  exceptFlash,
+  withContainer,
+  withRequestLog,
+} from '../middleware/index.ts'
+import { routes } from '../modules/index.ts'
+import { LoggerToken } from '../tokens/index.ts'
+import { type Context } from '../types/index.ts'
 
 /**
  * The status for each error

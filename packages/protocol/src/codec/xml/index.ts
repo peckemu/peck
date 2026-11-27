@@ -1,13 +1,17 @@
-import { type FieldNode } from '#protocol/codec/field'
+import { type FieldNode } from '../field/index.ts'
 import {
   type FieldPath,
   FormatCodec,
   type WriteTarget,
-} from '#protocol/codec/format'
-import { type XmlElement, XmlPath } from '#protocol/codec/path'
-import { type Schema } from '#protocol/codec/schema'
-import { XmlMessage } from '#protocol/wire/xml/message'
-import { XML_CDATA, XML_TEXT_NODE, type XmlNode } from '#protocol/wire/xml/node'
+} from '../format/index.ts'
+import { type XmlElement, XmlPath } from '../path/index.ts'
+import { type Schema } from '../schema/index.ts'
+import { XmlMessage } from '../../wire/xml/message/index.ts'
+import {
+  XML_CDATA,
+  XML_TEXT_NODE,
+  type XmlNode,
+} from '../../wire/xml/node/index.ts'
 
 /**
  * Reads and writes fields inside the body

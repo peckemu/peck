@@ -9,9 +9,9 @@ import {
 import { type OutgoingPacket } from '@peck/protocol'
 import { type Logger } from '@peck/logger'
 
-import { Session } from '#emulator/sessions/session'
-import { type Transport } from '#emulator/network/transport'
-import { LoggerToken } from '#emulator/tokens'
+import { Session } from '../session/index.ts'
+import { type Transport } from '../../network/transport/index.ts'
+import { LoggerToken } from '../../tokens/index.ts'
 
 /**
  * Every open session

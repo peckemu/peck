@@ -1,7 +1,7 @@
 import { type EntityWrite } from 'uql-orm'
 
-import { AvatarDefinition } from '#database/entities/definitions/avatar'
-import { DefinitionSeed } from '#database/seeds/definition'
+import { AvatarDefinition } from '../../entities/definitions/avatar/index.ts'
+import { DefinitionSeed } from '../definition/index.ts'
 
 /**
  * Seeds the animals

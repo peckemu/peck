@@ -6,8 +6,8 @@ import {
   type PacketFields,
 } from '@peck/protocol'
 
-import { type Session } from '#emulator/sessions/session'
-import { type SessionManager } from '#emulator/sessions/manager'
+import { type Session } from '../session/index.ts'
+import { type SessionManager } from '../manager/index.ts'
 
 /**
  * The player's room

@@ -1,8 +1,8 @@
 import { Hono } from 'hono'
 import { bodyLimit } from 'hono/body-limit'
 
-import { WallService } from '#api/modules/walls/services'
-import { type Context } from '#api/types'
+import { WallService } from '../services/index.ts'
+import { type Context } from '../../../types/index.ts'
 
 /**
  * The most a wall request may be

@@ -16,11 +16,11 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { ClusterNode } from '#emulator/cluster/node'
-import { type Config } from '#emulator/config'
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { SessionManager } from '#emulator/sessions/manager'
-import { ConfigToken } from '#emulator/tokens'
+import { ClusterNode } from '../../../cluster/node/index.ts'
+import { type Config } from '../../../config/index.ts'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { ConfigToken } from '../../../tokens/index.ts'
 
 /**
  * The language every shard is in

@@ -1,6 +1,6 @@
 import { type Logger } from '@peck/logger'
 
-import { type PacketSession } from '#plugins/context'
+import { type PacketSession } from '../context/index.ts'
 
 /**
  * The plugin events

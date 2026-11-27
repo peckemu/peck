@@ -1,6 +1,6 @@
 import { IncomingPacket, Packet } from '@peck/protocol'
 
-import { Incoming } from '#packets/incoming/headers'
+import { Incoming } from '../../headers/index.ts'
 
 /**
  * Empties the player's den

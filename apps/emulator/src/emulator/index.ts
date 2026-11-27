@@ -10,23 +10,23 @@ import {
 import { createRedis, type RedisClient } from '@peck/redis'
 import { type Logger } from '@peck/logger'
 
-import { BuddyService } from '#emulator/cluster/buddies'
-import { ClusterNode } from '#emulator/cluster/node'
-import { EcoPrizes } from '#emulator/handlers/den/eco/prizes'
-import { DenVisitors } from '#emulator/handlers/den/visitors'
-import { JamagramMail } from '#emulator/handlers/jamagram/mail'
-import { MasterpieceFrames } from '#emulator/handlers/masterpiece/frames'
-import { StaffBroadcasts } from '#emulator/handlers/moderation/broadcast'
-import { ModerationTools } from '#emulator/handlers/moderation/tools'
-import { PartyClock } from '#emulator/handlers/party/clock'
-import { PartyEndings } from '#emulator/handlers/party/ending'
-import { type Config } from '#emulator/config'
-import { createContainer } from '#emulator/container'
-import { Dispatcher } from '#emulator/dispatch/dispatcher'
-import { type Loader, LOADERS } from '#emulator/loaders'
-import { Server } from '#emulator/network/server'
-import { SessionManager } from '#emulator/sessions/manager'
-import { ClusterStoreToken, LoggerToken } from '#emulator/tokens'
+import { BuddyService } from '../cluster/buddies/index.ts'
+import { ClusterNode } from '../cluster/node/index.ts'
+import { EcoPrizes } from '../handlers/den/eco/prizes/index.ts'
+import { DenVisitors } from '../handlers/den/visitors/index.ts'
+import { JamagramMail } from '../handlers/jamagram/mail/index.ts'
+import { MasterpieceFrames } from '../handlers/masterpiece/frames/index.ts'
+import { StaffBroadcasts } from '../handlers/moderation/broadcast/index.ts'
+import { ModerationTools } from '../handlers/moderation/tools/index.ts'
+import { PartyClock } from '../handlers/party/clock/index.ts'
+import { PartyEndings } from '../handlers/party/ending/index.ts'
+import { type Config } from '../config/index.ts'
+import { createContainer } from '../container/index.ts'
+import { Dispatcher } from '../dispatch/dispatcher/index.ts'
+import { type Loader, LOADERS } from '../loaders/index.ts'
+import { Server } from '../network/server/index.ts'
+import { SessionManager } from '../sessions/manager/index.ts'
+import { ClusterStoreToken, LoggerToken } from '../tokens/index.ts'
 
 /**
  * The emulator
@@ -88,7 +88,7 @@ export class Emulator {
       'plugins loaded',
     )
 
-    this.container.get<Server>(Server).start()
+    await this.container.get<Server>(Server).start()
     const node = this.container.get<ClusterNode>(ClusterNode)
     await node.join()
     await this.container.get<BuddyService>(BuddyService).start(node.id)
@@ -111,7 +111,7 @@ export class Emulator {
     this.container.get<BuddyService>(BuddyService).stop()
     this.container.get<PartyClock>(PartyClock).stop()
     await this.container.get<ClusterNode>(ClusterNode).leave()
-    this.container.get<Server>(Server).stop()
+    await this.container.get<Server>(Server).stop()
 
     await this.events.emit('stop')
     await this.plugins.stop()

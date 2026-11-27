@@ -11,9 +11,9 @@ import { type Logger } from '@peck/logger'
 import { ModerationNoticeOutgoing } from '@peck/packets'
 import { can } from '@peck/permissions'
 
-import { type Session } from '#emulator/sessions/session'
-import { SessionManager } from '#emulator/sessions/manager'
-import { LoggerToken } from '#emulator/tokens'
+import { type Session } from '../../../sessions/session/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { LoggerToken } from '../../../tokens/index.ts'
 
 /**
  * The staff action events

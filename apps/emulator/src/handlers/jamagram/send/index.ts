@@ -14,15 +14,11 @@ import {
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 import { UserVar } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import {
-  CLOTHING,
-  DEN_ITEM,
-  JamagramMail,
-} from '#emulator/handlers/jamagram/mail'
-import { PlayerFinder } from '#emulator/sessions/finder'
-import { type Session } from '#emulator/sessions/session'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { CLOTHING, DEN_ITEM, JamagramMail } from '../mail/index.ts'
+import { PlayerFinder } from '../../../sessions/finder/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
+import { PlayerVariables } from '../../../sessions/variables/index.ts'
 
 /**
  * The cards players may pick

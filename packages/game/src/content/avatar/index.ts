@@ -1,4 +1,4 @@
-import { Catalogue } from '#game/catalogue'
+import { Catalogue } from '../../catalogue/index.ts'
 
 /**
  * An animal

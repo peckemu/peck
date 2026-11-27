@@ -2,7 +2,7 @@ import { type Point } from '@peck/shared'
 
 import { Field, IncomingPacket, Packet } from '@peck/protocol'
 
-import { Incoming } from '#packets/incoming/headers'
+import { Incoming } from '../../headers/index.ts'
 
 /**
  * The facing left bit

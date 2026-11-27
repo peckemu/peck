@@ -1,6 +1,6 @@
 import { Entity, Field, type filledKey, Id, type idKey } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
+import { Player } from '../../player/index.ts'
 
 /**
  * A player's daily game stats

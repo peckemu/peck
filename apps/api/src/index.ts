@@ -3,9 +3,9 @@ import { createDatabase } from '@peck/database'
 import { createLogger } from '@peck/logger'
 import { createRedis } from '@peck/redis'
 
-import { createApp } from '#api/app'
-import { config } from '#api/config'
-import { createContainer } from '#api/container'
+import { createApp } from './app/index.ts'
+import { config } from './config/index.ts'
+import { createContainer } from './container/index.ts'
 
 const logger = createLogger(config)
 const database = createDatabase(config.databaseUrl)

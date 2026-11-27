@@ -1,5 +1,5 @@
-import { ProtocolError } from '#protocol/error'
-import { Numbers } from '#protocol/wire/numbers'
+import { ProtocolError } from '../../../error/index.ts'
+import { Numbers } from '../../numbers/index.ts'
 
 /**
  * Reads XT arguments in order

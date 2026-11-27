@@ -1,4 +1,4 @@
-import { ProtocolError } from '#protocol/error'
+import { ProtocolError } from '../../../error/index.ts'
 
 /**
  * The XT separator

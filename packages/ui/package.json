@@ -7,9 +7,6 @@
     ".": "./src/index.ts",
     "./theme.css": "./src/theme/index.css"
   },
-  "imports": {
-    "#ui/*": "./src/*/index.ts"
-  },
   "scripts": {
     "typecheck": "vue-tsc --noEmit"
   },

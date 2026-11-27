@@ -8,9 +8,9 @@ import {
   type PacketArgs,
 } from '@peck/protocol'
 
-import { Room } from '#emulator/sessions/room'
-import { type Session } from '#emulator/sessions/session'
-import { type SessionManager } from '#emulator/sessions/manager'
+import { Room } from '../../sessions/room/index.ts'
+import { type Session } from '../../sessions/session/index.ts'
+import { type SessionManager } from '../../sessions/manager/index.ts'
 
 /**
  * The packet context

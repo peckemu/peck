@@ -11,10 +11,10 @@ import {
   PlayerRepository,
 } from '@peck/database'
 
-import { type Config } from '#api/config'
-import { ServiceError } from '#api/errors'
-import { type Flashvars, flashvars } from '#api/modules/play/flashvars'
-import { ConfigToken } from '#api/tokens'
+import { type Config } from '../../../config/index.ts'
+import { ServiceError } from '../../../errors/index.ts'
+import { type Flashvars, flashvars } from '../flashvars/index.ts'
+import { ConfigToken } from '../../../tokens/index.ts'
 
 /**
  * What the game is started with

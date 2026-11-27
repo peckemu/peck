@@ -1,8 +1,8 @@
-import { DenItem } from '#database/entities/den/item'
-import { ItemPrize, type PrizeSource } from '#database/entities/prize'
-import { TransactionItem } from '#database/entities/transactions/item'
-import { Transaction } from '#database/entities/transactions/transaction'
-import { type Database } from '#database/pool'
+import { DenItem } from '../../entities/den/item/index.ts'
+import { ItemPrize, type PrizeSource } from '../../entities/prize/index.ts'
+import { TransactionItem } from '../../entities/transactions/item/index.ts'
+import { Transaction } from '../../entities/transactions/transaction/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * A prize to offer

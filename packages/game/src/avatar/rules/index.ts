@@ -1,11 +1,17 @@
 import { ON_SALE, UserVar, UserVarType } from '@peck/shared'
 
-import { type Avatar } from '#game/avatar'
-import { type AvatarCatalogue, type AvatarTemplate } from '#game/content/avatar'
-import { type DiamondCatalogue, DiamondType } from '#game/content/diamond'
-import { type GenericListCatalogue } from '#game/content/list'
-import { type Player, type UserVariable } from '#game/player'
-import { type Cost } from '#game/shop/price'
+import { type Avatar } from '../index.ts'
+import {
+  type AvatarCatalogue,
+  type AvatarTemplate,
+} from '../../content/avatar/index.ts'
+import {
+  type DiamondCatalogue,
+  DiamondType,
+} from '../../content/diamond/index.ts'
+import { type GenericListCatalogue } from '../../content/list/index.ts'
+import { type Player, type UserVariable } from '../../player/index.ts'
+import { type Cost } from '../../shop/price/index.ts'
 
 /**
  * The name wheels

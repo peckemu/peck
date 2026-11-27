@@ -1,15 +1,16 @@
 import { Hono } from 'hono'
 import { bodyLimit } from 'hono/body-limit'
 
-import { validate, withAuth, withPermission } from '#api/middleware'
-import { MOST_BYTES } from '#api/modules/masterpieces/images'
 import {
-  decisionSchema,
-  masterpieceIdSchema,
-} from '#api/modules/masterpieces/schemas'
-import { MasterpieceService } from '#api/modules/masterpieces/services'
-import { pendingView } from '#api/modules/masterpieces/views'
-import { type Context } from '#api/types'
+  validate,
+  withAuth,
+  withPermission,
+} from '../../../middleware/index.ts'
+import { MOST_BYTES } from '../images/index.ts'
+import { decisionSchema, masterpieceIdSchema } from '../schemas/index.ts'
+import { MasterpieceService } from '../services/index.ts'
+import { pendingView } from '../views/index.ts'
+import { type Context } from '../../../types/index.ts'
 
 /**
  * Flash's policy file

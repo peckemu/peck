@@ -1,7 +1,7 @@
 import { InjectionToken } from '@needle-di/core'
 import { type ClusterStore } from '@peck/cluster'
 
-import { type Config } from '#emulator/config'
+import { type Config } from '../config/index.ts'
 
 /**
  * The emulator config

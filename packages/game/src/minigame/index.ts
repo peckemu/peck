@@ -1,4 +1,4 @@
-import { type Match, type MatchGems } from '#game/minigame/match'
+import { type Match, type MatchGems } from './match/index.ts'
 
 /**
  * The most gems one award gives

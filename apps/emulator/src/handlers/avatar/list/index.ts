@@ -7,8 +7,8 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerFinder } from '#emulator/sessions/finder'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PlayerFinder } from '../../../sessions/finder/index.ts'
 
 /**
  * Lists a player's avatars

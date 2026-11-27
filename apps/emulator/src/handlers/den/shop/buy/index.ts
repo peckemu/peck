@@ -13,9 +13,9 @@ import {
 import { Handler, PacketHandler } from '@peck/plugins'
 import { CURRENCIES } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerFinder } from '#emulator/sessions/finder'
-import { SessionManager } from '#emulator/sessions/manager'
+import { type HandlerContext } from '../../../../dispatch/context/index.ts'
+import { PlayerFinder } from '../../../../sessions/finder/index.ts'
+import { SessionManager } from '../../../../sessions/manager/index.ts'
 
 /**
  * Buys from a den shop stand

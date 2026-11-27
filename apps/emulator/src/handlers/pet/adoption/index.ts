@@ -4,9 +4,9 @@ import { Pet, PetRules, type PetTemplate, PetUnlocks } from '@peck/game'
 import { PetCreateOutgoing, PetsUnlockedOutgoing } from '@peck/packets'
 import { UserVar } from '@peck/shared'
 
-import { PetWalk } from '#emulator/handlers/pet/walk'
-import { type Session } from '#emulator/sessions/session'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { PetWalk } from '../walk/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
+import { PlayerVariables } from '../../../sessions/variables/index.ts'
 
 /**
  * The personality list

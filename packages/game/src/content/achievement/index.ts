@@ -1,6 +1,6 @@
 import { BIT_FIELD_USER_VARS, UserVar } from '@peck/shared'
 
-import { Catalogue } from '#game/catalogue'
+import { Catalogue } from '../../catalogue/index.ts'
 
 /**
  * The user variables no achievement counts

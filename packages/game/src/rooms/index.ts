@@ -1,15 +1,15 @@
 import { RoomJoinType } from '@peck/shared'
 
-import { type DenRoomTemplate } from '#game/content/den-room'
-import { GameError } from '#game/error'
-import { type Player } from '#game/player'
-import { Room } from '#game/room'
-import { firstShardOf, SHARDS_PER_NODE } from '#game/shards'
+import { type DenRoomTemplate } from '../content/den-room/index.ts'
+import { GameError } from '../error/index.ts'
+import { type Player } from '../player/index.ts'
+import { Room } from '../room/index.ts'
+import { firstShardOf, SHARDS_PER_NODE } from '../shards/index.ts'
 import {
   type PartyDetails,
   RoomTemplate,
   type RoomTemplateOptions,
-} from '#game/template'
+} from '../template/index.ts'
 
 /**
  * Where a join put the player

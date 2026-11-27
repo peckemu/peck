@@ -1,5 +1,5 @@
-import { launcherRouter } from '#api/modules/launcher/routes'
-import { type Module } from '#api/modules/module'
+import { launcherRouter } from './routes/index.ts'
+import { type Module } from '../module/index.ts'
 
 /**
  * The launcher module

@@ -2,7 +2,7 @@ import { InjectionToken } from '@needle-di/core'
 import { type Database } from '@peck/database'
 import { type Logger } from '@peck/logger'
 
-import { type Config } from '#api/config'
+import { type Config } from '../config/index.ts'
 
 /**
  * The database

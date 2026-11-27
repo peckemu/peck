@@ -7,9 +7,9 @@ import {
   type idKey,
 } from 'uql-orm'
 
-import { Account } from '#database/entities/accounts/account'
-import { RedemptionCode } from '#database/entities/codes/code'
-import { Player } from '#database/entities/player'
+import { Account } from '../../accounts/account/index.ts'
+import { RedemptionCode } from '../code/index.ts'
+import { Player } from '../../player/index.ts'
 
 /**
  * An account using a gift code

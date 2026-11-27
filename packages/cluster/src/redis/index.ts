@@ -1,6 +1,6 @@
 import { type RedisClient } from '@peck/redis'
 
-import { type ClusterStore } from '#cluster/store'
+import { type ClusterStore } from '../store/index.ts'
 
 /**
  * Claims a key

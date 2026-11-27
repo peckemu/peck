@@ -11,7 +11,7 @@ import {
   uuid,
 } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
+import { Player } from '../../player/index.ts'
 
 /**
  * The poster's animal

@@ -3,9 +3,9 @@ import { HostedParties } from '@peck/game'
 import { HostedPartyNodeIncoming, HostedPartyNodeOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type Config } from '#emulator/config'
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { ConfigToken } from '#emulator/tokens'
+import { type Config } from '../../../config/index.ts'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { ConfigToken } from '../../../tokens/index.ts'
 
 /**
  * Sends a hosted party's server

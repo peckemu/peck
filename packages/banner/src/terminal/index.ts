@@ -7,7 +7,7 @@ import {
   SHADOW,
   TREE,
   WORD,
-} from '#banner/art'
+} from '../art/index.ts'
 
 /**
  * Checks the terminal takes colours

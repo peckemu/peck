@@ -14,7 +14,7 @@ import {
   type SanctionInfo,
 } from '@peck/database'
 
-import { ServiceError } from '#api/errors'
+import { ServiceError } from '../../../errors/index.ts'
 
 /**
  * Lets staff review reports and lift sanctions

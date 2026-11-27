@@ -14,8 +14,8 @@ import {
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 import { UserVar } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PlayerVariables } from '../../../sessions/variables/index.ts'
 
 /**
  * The most gems a player wins in a day

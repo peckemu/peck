@@ -28,8 +28,8 @@ import { type PacketSession, PluginEvents } from '@peck/plugins'
 import { type OutgoingPacket } from '@peck/protocol'
 import { GAME_INVITES_OFF, UserVar } from '@peck/shared'
 
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
 
 /**
  * A game played inside the room

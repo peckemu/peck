@@ -2,7 +2,7 @@ import { injectable } from '@needle-di/core'
 import { type Player, TradeRules } from '@peck/game'
 import { TradeListOutgoing } from '@peck/packets'
 
-import { type Session } from '#emulator/sessions/session'
+import { type Session } from '../../../sessions/session/index.ts'
 
 /**
  * Sends trade lists

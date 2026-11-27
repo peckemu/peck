@@ -1,6 +1,6 @@
-import { Codecs } from '#protocol/codec/codecs'
-import { Schema } from '#protocol/codec/schema'
-import { type PacketFormat } from '#protocol/wire/message'
+import { Codecs } from '../../codec/codecs/index.ts'
+import { Schema } from '../../codec/schema/index.ts'
+import { type PacketFormat } from '../../wire/message/index.ts'
 
 /**
  * The non-method keys

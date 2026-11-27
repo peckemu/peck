@@ -2,8 +2,8 @@ import { QuestActorType, QuestPrizeKind } from '@peck/shared'
 
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { Outgoing } from '#packets/outgoing/headers'
-import { type ShownPrize } from '#packets/outgoing/quest/prize'
+import { Outgoing } from '../../headers/index.ts'
+import { type ShownPrize } from '../prize/index.ts'
 
 /**
  * Where an actor is

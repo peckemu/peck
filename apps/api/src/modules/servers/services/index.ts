@@ -2,7 +2,7 @@ import { inject, injectable } from '@needle-di/core'
 import { type NodeInfo, NodeRegistry, type NodeRoom } from '@peck/cluster'
 import { AuditRepository } from '@peck/database'
 
-import { ServiceError } from '#api/errors'
+import { ServiceError } from '../../../errors/index.ts'
 
 /**
  * Lists and drains the emulator nodes

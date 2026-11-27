@@ -1,14 +1,14 @@
-import { type FieldNode } from '#protocol/codec/field'
+import { type FieldNode } from '../field/index.ts'
 import {
   type FieldPath,
   FormatCodec,
   type WriteTarget,
-} from '#protocol/codec/format'
-import { type Schema } from '#protocol/codec/schema'
-import { ProtocolError } from '#protocol/error'
-import { XtMessage } from '#protocol/wire/xt/message'
-import { XtReader } from '#protocol/wire/xt/reader'
-import { XtWriter } from '#protocol/wire/xt/writer'
+} from '../format/index.ts'
+import { type Schema } from '../schema/index.ts'
+import { ProtocolError } from '../../error/index.ts'
+import { XtMessage } from '../../wire/xt/message/index.ts'
+import { XtReader } from '../../wire/xt/reader/index.ts'
+import { XtWriter } from '../../wire/xt/writer/index.ts'
 
 /**
  * Reads and writes fields as XT arguments

@@ -1,7 +1,7 @@
 import { currentTimestamp, sql, uuid } from 'uql-orm'
 import { defineBuilderMigration } from 'uql-orm/migrate'
 
-import { addChecks } from '#database/checks'
+import { addChecks } from '../src/checks/index.ts'
 
 /**
  * Creates the accounts table

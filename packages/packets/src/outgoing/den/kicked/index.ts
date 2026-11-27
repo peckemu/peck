@@ -1,6 +1,6 @@
 import { OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { Outgoing } from '#packets/outgoing/headers'
+import { Outgoing } from '../../headers/index.ts'
 
 /**
  * The player was sent out of a den

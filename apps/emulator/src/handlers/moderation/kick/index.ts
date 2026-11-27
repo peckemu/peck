@@ -2,8 +2,8 @@ import { inject } from '@needle-di/core'
 import { KickIncoming, KickOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { ModerationTools } from '#emulator/handlers/moderation/tools'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { ModerationTools } from '../tools/index.ts'
 
 /**
  * Kicks a player

@@ -1,5 +1,5 @@
-import { type PackSet } from '#content/pack'
-import { type Strings } from '#content/strings'
+import { type PackSet } from '../../pack/index.ts'
+import { type Strings } from '../../strings/index.ts'
 
 /**
  * An exported row

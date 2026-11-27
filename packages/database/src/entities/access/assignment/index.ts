@@ -8,8 +8,8 @@ import {
   ManyToOne,
 } from 'uql-orm'
 
-import { Account } from '#database/entities/accounts/account'
-import { Role } from '#database/entities/access/role'
+import { Account } from '../../accounts/account/index.ts'
+import { Role } from '../role/index.ts'
 
 /**
  * The role an account holds

@@ -3,7 +3,7 @@ import { HostedParties } from '@peck/game'
 import { HostingTimeIncoming, HostingTimeOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Sends a host's time left

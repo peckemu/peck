@@ -7,7 +7,7 @@ import {
   type SessionTokens,
 } from '@peck/database'
 
-import { ServiceError } from '#api/errors'
+import { ServiceError } from '../../../errors/index.ts'
 
 /**
  * Signs accounts in and out

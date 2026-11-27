@@ -1,12 +1,12 @@
 import { CURRENCIES, type Currency } from '@peck/shared'
 
-import { Item } from '#database/entities/item'
-import { Player } from '#database/entities/player'
-import { TransactionCurrency } from '#database/entities/transactions/currency'
-import { TransactionItem } from '#database/entities/transactions/item'
-import { Transaction } from '#database/entities/transactions/transaction'
-import { UserVariable } from '#database/entities/variable'
-import { type Querier, type Database } from '#database/pool'
+import { Item } from '../../entities/item/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { TransactionCurrency } from '../../entities/transactions/currency/index.ts'
+import { TransactionItem } from '../../entities/transactions/item/index.ts'
+import { Transaction } from '../../entities/transactions/transaction/index.ts'
+import { UserVariable } from '../../entities/variable/index.ts'
+import { type Querier, type Database } from '../../pool/index.ts'
 
 /**
  * A clothing present

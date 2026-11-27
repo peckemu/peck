@@ -2,8 +2,8 @@ import { inject } from '@needle-di/core'
 import { BuddyListIncoming, BuddyListOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { BuddyService } from '#emulator/cluster/buddies'
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { BuddyService } from '../../../cluster/buddies/index.ts'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Sends the buddy and blocked lists

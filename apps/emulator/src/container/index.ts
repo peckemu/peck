@@ -72,15 +72,15 @@ import { HandlerRegistry, PluginEvents, PluginHost } from '@peck/plugins'
 import { type RedisClient } from '@peck/redis'
 import { createLogger, type Logger } from '@peck/logger'
 
-import { type Config } from '#emulator/config'
-import { HANDLERS } from '#emulator/handlers'
+import { type Config } from '../config/index.ts'
+import { HANDLERS } from '../handlers/index.ts'
 import {
   ClusterStoreToken,
   ConfigToken,
   DatabaseToken,
   LoggerToken,
   RedisToken,
-} from '#emulator/tokens'
+} from '../tokens/index.ts'
 
 /**
  * Container options

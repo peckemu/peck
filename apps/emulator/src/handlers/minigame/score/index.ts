@@ -4,8 +4,8 @@ import { MinigameCatalogue, Minigames, MOST_SCORE } from '@peck/game'
 import { MinigameScoreIncoming } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PlayerVariables } from '../../../sessions/variables/index.ts'
 
 /**
  * Keeps a minigame score

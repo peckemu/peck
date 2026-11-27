@@ -1,8 +1,8 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import { type AppearingAvatar } from '#packets/outgoing/avatar/joined'
-import { Outgoing } from '#packets/outgoing/headers'
-import { type ShownPet } from '#packets/outgoing/pet/list'
+import { type AppearingAvatar } from '../joined/index.ts'
+import { Outgoing } from '../../headers/index.ts'
+import { type ShownPet } from '../../pet/list/index.ts'
 
 /**
  * The player an avatar belongs to

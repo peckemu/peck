@@ -8,10 +8,10 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { SessionManager } from '#emulator/sessions/manager'
-import { RewardDelivery } from '#emulator/sessions/rewards'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { RewardDelivery } from '../../../sessions/rewards/index.ts'
+import { PlayerVariables } from '../../../sessions/variables/index.ts'
 
 /**
  * How long a new player can name a referrer

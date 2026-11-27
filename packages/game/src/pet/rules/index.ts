@@ -1,8 +1,8 @@
-import { type AvatarCatalogue } from '#game/content/avatar'
-import { type GenericListCatalogue } from '#game/content/list'
-import { type PetCatalogue, type PetTemplate } from '#game/content/pet'
-import { type Pet } from '#game/pet'
-import { type Player } from '#game/player'
+import { type AvatarCatalogue } from '../../content/avatar/index.ts'
+import { type GenericListCatalogue } from '../../content/list/index.ts'
+import { type PetCatalogue, type PetTemplate } from '../../content/pet/index.ts'
+import { type Pet } from '../index.ts'
+import { type Player } from '../../player/index.ts'
 
 /**
  * The pet name lists

@@ -3,7 +3,7 @@ import { WallRepository } from '@peck/database'
 import { WallVisitIncoming, WallVisitOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Counts a visit to someone's wall

@@ -3,7 +3,7 @@ import { Trades } from '@peck/game'
 import { TradeBusyIncoming } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Sends the trade window state

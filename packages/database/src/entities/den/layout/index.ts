@@ -1,6 +1,6 @@
 import { Entity, Field, Id, type idKey } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
+import { Player } from '../../player/index.ts'
 
 /**
  * Where something stands in a den room not in use

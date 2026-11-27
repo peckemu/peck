@@ -4,7 +4,7 @@ import { MinigameCatalogue, Minigames } from '@peck/game'
 import { MinigameMasteryIncoming, MinigameMasteryOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * The mastery points

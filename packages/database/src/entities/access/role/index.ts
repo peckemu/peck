@@ -10,8 +10,8 @@ import {
   uuid,
 } from 'uql-orm'
 
-import { Account } from '#database/entities/accounts/account'
-import { RoleGrant } from '#database/entities/access/grant'
+import { Account } from '../../accounts/account/index.ts'
+import { RoleGrant } from '../grant/index.ts'
 
 /**
  * A staff role

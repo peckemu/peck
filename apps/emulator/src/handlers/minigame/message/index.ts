@@ -4,8 +4,8 @@ import { type Match, Minigames, type Seat } from '@peck/game'
 import { MinigameMessageIncoming, MinigameMessageOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { MinigameTables } from '#emulator/handlers/minigame/tables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { MinigameTables } from '../tables/index.ts'
 
 /**
  * An upload token request

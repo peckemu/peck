@@ -3,7 +3,7 @@ import {
   type Outcomes,
   type Referee,
   type SeatIndex,
-} from '#game/minigame/referee'
+} from '../referee/index.ts'
 import {
   BowlingReferee,
   FourGemsReferee,
@@ -13,7 +13,7 @@ import {
   ScoopedReferee,
   ShellGameReferee,
   TicTacToeReferee,
-} from '#game/minigame/referees'
+} from '../referees/index.ts'
 
 /**
  * A referee's class

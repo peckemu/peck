@@ -8,9 +8,9 @@ import {
   type PostRequest,
   type WallRequest,
   WallRequests,
-} from '#api/modules/walls/requests'
-import { wallView } from '#api/modules/walls/views'
-import { LoggerToken } from '#api/tokens'
+} from '../requests/index.ts'
+import { wallView } from '../views/index.ts'
+import { LoggerToken } from '../../../tokens/index.ts'
 
 /**
  * An answer to the wall service

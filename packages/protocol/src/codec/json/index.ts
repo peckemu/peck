@@ -1,11 +1,11 @@
-import { type FieldNode } from '#protocol/codec/field'
+import { type FieldNode } from '../field/index.ts'
 import {
   type FieldPath,
   FormatCodec,
   type WriteTarget,
-} from '#protocol/codec/format'
-import { type Schema } from '#protocol/codec/schema'
-import { JsonMessage } from '#protocol/wire/json/message'
+} from '../format/index.ts'
+import { type Schema } from '../schema/index.ts'
+import { JsonMessage } from '../../wire/json/message/index.ts'
 
 /**
  * Checks for a plain object

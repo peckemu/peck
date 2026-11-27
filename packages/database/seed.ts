@@ -1,6 +1,6 @@
-import { createDatabase } from '#database/pool'
-import { Seeder } from '#database/seeder'
-import { SEEDS } from '#database/seeds'
+import { createDatabase } from './src/pool/index.ts'
+import { Seeder } from './src/seeder/index.ts'
+import { SEEDS } from './src/seeds/index.ts'
 
 const url = process.env['DATABASE_URL']
 if (url === undefined) throw new Error('Missing DATABASE_URL')

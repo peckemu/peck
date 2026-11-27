@@ -1,8 +1,8 @@
 import { inflateRawSync, inflateSync } from 'node:zlib'
 
-import { type AmfObject, AmfReader, type AmfValue } from '#content/amf'
-import { Definition } from '#content/definition'
-import { ContentError } from '#content/error'
+import { type AmfObject, AmfReader, type AmfValue } from '../amf/index.ts'
+import { Definition } from '../definition/index.ts'
+import { ContentError } from '../error/index.ts'
 
 /**
  * A def pack

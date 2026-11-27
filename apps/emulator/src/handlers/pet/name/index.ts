@@ -4,8 +4,8 @@ import { PetCatalogue, PetRules } from '@peck/game'
 import { PetNameIncoming, PetNameOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PetWalk } from '#emulator/handlers/pet/walk'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PetWalk } from '../walk/index.ts'
 
 /**
  * Names a hatched egg

@@ -1,5 +1,5 @@
-import { type PacketContext } from '#plugins/context'
-import { Guard } from '#plugins/guards/guard'
+import { type PacketContext } from '../../context/index.ts'
+import { Guard } from '../guard/index.ts'
 
 /**
  * Only allows keyed sessions

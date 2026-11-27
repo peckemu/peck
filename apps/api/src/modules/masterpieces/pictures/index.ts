@@ -2,8 +2,8 @@ import { S3Client, type S3File } from 'bun'
 
 import { inject, injectable } from '@needle-di/core'
 
-import { type Config } from '#api/config'
-import { ConfigToken } from '#api/tokens'
+import { type Config } from '../../../config/index.ts'
+import { ConfigToken } from '../../../tokens/index.ts'
 
 /**
  * Keeps masterpiece pictures in the bucket

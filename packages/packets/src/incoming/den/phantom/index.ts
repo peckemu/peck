@@ -1,6 +1,6 @@
 import { Field, IncomingPacket, Packet } from '@peck/protocol'
 
-import { Incoming } from '#packets/incoming/headers'
+import { Incoming } from '../../headers/index.ts'
 
 /**
  * Turns the player into a phantom or back

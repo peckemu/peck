@@ -1,8 +1,8 @@
-import { type Definition } from '#content/definition'
-import { ContentExport, type Row } from '#content/exports/export'
-import { type PackSet } from '#content/pack'
-import { type Strings } from '#content/strings'
-import { readNameWheels } from '#content/wheels'
+import { type Definition } from '../../definition/index.ts'
+import { ContentExport, type Row } from '../export/index.ts'
+import { type PackSet } from '../../pack/index.ts'
+import { type Strings } from '../../strings/index.ts'
+import { readNameWheels } from '../../wheels/index.ts'
 
 /**
  * The lists' def packs

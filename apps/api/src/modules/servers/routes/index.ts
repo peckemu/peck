@@ -1,10 +1,14 @@
 import { Hono } from 'hono'
 
-import { validate, withAuth, withPermission } from '#api/middleware'
-import { drainSchema, serverIdSchema } from '#api/modules/servers/schemas'
-import { ServerService } from '#api/modules/servers/services'
-import { serverView } from '#api/modules/servers/views'
-import { type Context } from '#api/types'
+import {
+  validate,
+  withAuth,
+  withPermission,
+} from '../../../middleware/index.ts'
+import { drainSchema, serverIdSchema } from '../schemas/index.ts'
+import { ServerService } from '../services/index.ts'
+import { serverView } from '../views/index.ts'
+import { type Context } from '../../../types/index.ts'
 
 /**
  * The server routes

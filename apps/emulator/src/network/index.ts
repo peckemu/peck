@@ -1,3 +1,6 @@
 export * from './connection/index.ts'
+export * from './game/index.ts'
+export * from './limiter/index.ts'
 export * from './server/index.ts'
+export * from './terminator/index.ts'
 export * from './transport/index.ts'

@@ -1,5 +1,9 @@
-import { ProtocolError } from '#protocol/error'
-import { FRAME_DELIMITER } from '#protocol/wire/decoder'
+import { ProtocolError } from '../../error/index.ts'
+
+/**
+ * Byte the client ends every frame with
+ */
+export const FRAME_DELIMITER = 0x00
 
 /**
  * Writes NUL terminated frames

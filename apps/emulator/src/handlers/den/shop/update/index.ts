@@ -8,7 +8,7 @@ import { Den, DenItemCatalogue, type Player } from '@peck/game'
 import { DenShopUpdateIncoming, DenShopUpdateOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../../dispatch/context/index.ts'
 
 /**
  * A stand change

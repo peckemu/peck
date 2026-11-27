@@ -1,8 +1,8 @@
-import { DenItem } from '#database/entities/den/item'
-import { DenLayout } from '#database/entities/den/layout'
-import { Pet } from '#database/entities/pet'
-import { Player } from '#database/entities/player'
-import { type Database, type Querier } from '#database/pool'
+import { DenItem } from '../../entities/den/item/index.ts'
+import { DenLayout } from '../../entities/den/layout/index.ts'
+import { Pet } from '../../entities/pet/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * Where a den item now stands

@@ -3,8 +3,8 @@ import { LikeRepository } from '@peck/database'
 import { LikesIncoming, LikesOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { LikeTargets } from '#emulator/handlers/like/targets'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { LikeTargets } from '../targets/index.ts'
 
 /**
  * Sends a like count

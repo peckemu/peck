@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 
-import { LauncherService } from '#api/modules/launcher/services'
-import { type Context } from '#api/types'
+import { LauncherService } from '../services/index.ts'
+import { type Context } from '../../../types/index.ts'
 
 /**
  * The launcher routes

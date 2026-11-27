@@ -4,8 +4,8 @@ import { HostedPartyJoinIncoming, HostedPartyJoinOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 import { RoomJoinType } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PartyVenues } from '#emulator/handlers/party/venue'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PartyVenues } from '../venue/index.ts'
 
 /**
  * Goes to a party a player hosts

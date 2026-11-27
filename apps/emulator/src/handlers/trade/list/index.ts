@@ -2,9 +2,9 @@ import { inject } from '@needle-di/core'
 import { TradeListIncoming, TradeListOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { TradeLists } from '#emulator/handlers/trade/lists'
-import { SessionManager } from '#emulator/sessions/manager'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { TradeLists } from '../lists/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
 
 /**
  * Sends a player's trade list

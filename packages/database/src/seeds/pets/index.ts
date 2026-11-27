@@ -1,7 +1,7 @@
 import { type EntityWrite } from 'uql-orm'
 
-import { PetDefinition } from '#database/entities/definitions/pet'
-import { DefinitionSeed, type Timed, timed } from '#database/seeds/definition'
+import { PetDefinition } from '../../entities/definitions/pet/index.ts'
+import { DefinitionSeed, type Timed, timed } from '../definition/index.ts'
 
 /**
  * Seeds the pets

@@ -9,9 +9,9 @@ import {
   OneToMany,
 } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
-import { TransactionCurrency } from '#database/entities/transactions/currency'
-import { TransactionItem } from '#database/entities/transactions/item'
+import { Player } from '../../player/index.ts'
+import { TransactionCurrency } from '../currency/index.ts'
+import { TransactionItem } from '../item/index.ts'
 
 /**
  * A transaction's purpose

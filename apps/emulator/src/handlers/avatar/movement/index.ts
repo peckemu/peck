@@ -2,8 +2,8 @@ import { inject } from '@needle-di/core'
 import { MovementIncoming, MovementOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { SessionManager } from '#emulator/sessions/manager'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
 
 /**
  * Moves the player

@@ -1,6 +1,6 @@
 import { join } from 'node:path'
 
-import { DEFAULT_LIMITS, type Limits } from '#emulator/limits'
+import { DEFAULT_LIMITS, type Limits } from '../limits/index.ts'
 
 /**
  * Reads a required environment variable
@@ -64,10 +64,6 @@ export const config = {
     ),
     packetRate: integer('PACKET_RATE', DEFAULT_LIMITS.packetRate),
     packetBurst: integer('PACKET_BURST', DEFAULT_LIMITS.packetBurst),
-    maxQueuedChunks: integer(
-      'MAX_QUEUED_CHUNKS',
-      DEFAULT_LIMITS.maxQueuedChunks,
-    ),
     maxRefused: integer('MAX_REFUSED', DEFAULT_LIMITS.maxRefused),
     loginTimeoutMs: integer('LOGIN_TIMEOUT_MS', DEFAULT_LIMITS.loginTimeoutMs),
   } satisfies Limits,

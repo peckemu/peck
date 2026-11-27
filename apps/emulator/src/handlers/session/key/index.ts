@@ -1,7 +1,7 @@
 import { RandomKeyIncoming, RandomKeyOutgoing } from '@peck/packets'
 import { Guest, Handler, PacketHandler, Public } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Hands out the login key

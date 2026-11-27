@@ -3,7 +3,7 @@ import { type Logger } from '@peck/logger'
 import { type PacketSession } from '@peck/plugins'
 import { type OutgoingPacket } from '@peck/protocol'
 
-import { type Transport } from '#emulator/network/transport'
+import { type Transport } from '../../network/transport/index.ts'
 
 /**
  * A player on a connection

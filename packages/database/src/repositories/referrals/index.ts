@@ -1,14 +1,11 @@
-import { RedemptionCode } from '#database/entities/codes/code'
-import { Player } from '#database/entities/player'
-import { ReferralLevel } from '#database/entities/referrals/level'
-import { Referral } from '#database/entities/referrals/referral'
-import { UserVariable } from '#database/entities/variable'
-import { type Database, type Querier } from '#database/pool'
-import { CodeRepository } from '#database/repositories/codes'
-import {
-  type GrantedReward,
-  RewardRepository,
-} from '#database/repositories/rewards'
+import { RedemptionCode } from '../../entities/codes/code/index.ts'
+import { Player } from '../../entities/player/index.ts'
+import { ReferralLevel } from '../../entities/referrals/level/index.ts'
+import { Referral } from '../../entities/referrals/referral/index.ts'
+import { UserVariable } from '../../entities/variable/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
+import { CodeRepository } from '../codes/index.ts'
+import { type GrantedReward, RewardRepository } from '../rewards/index.ts'
 
 /**
  * The first treasure's user variable

@@ -7,7 +7,7 @@ import {
   ManyToOne,
 } from 'uql-orm'
 
-import { Transaction } from '#database/entities/transactions/transaction'
+import { Transaction } from '../transaction/index.ts'
 
 /**
  * What kind of thing a transaction moved

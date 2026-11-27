@@ -4,7 +4,7 @@ import { AchievementCatalogue, type Price, type UserVariable } from '@peck/game'
 import { UserVariableChangedOutgoing } from '@peck/packets'
 import { UserVar } from '@peck/shared'
 
-import { type Session } from '#emulator/sessions/session'
+import { type Session } from '../session/index.ts'
 
 /**
  * The gems currency

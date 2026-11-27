@@ -3,7 +3,7 @@ import { AchievementRepository } from '@peck/database'
 import { AchievementsIncoming, AchievementsOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Lists a player's achievements

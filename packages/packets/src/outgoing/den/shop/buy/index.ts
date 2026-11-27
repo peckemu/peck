@@ -1,10 +1,7 @@
 import { Field, OutgoingPacket, Packet, PacketFactory } from '@peck/protocol'
 
-import {
-  DenShopItemsOutgoing,
-  type ShownListing,
-} from '#packets/outgoing/den/shop/items'
-import { Outgoing } from '#packets/outgoing/headers'
+import { DenShopItemsOutgoing, type ShownListing } from '../items/index.ts'
+import { Outgoing } from '../../../headers/index.ts'
 
 /**
  * A stand sale

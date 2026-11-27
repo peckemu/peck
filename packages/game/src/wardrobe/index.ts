@@ -1,6 +1,6 @@
-import { type Avatar } from '#game/avatar'
-import { type ItemCatalogue, type ItemTemplate } from '#game/content/item'
-import { type Player } from '#game/player'
+import { type Avatar } from '../avatar/index.ts'
+import { type ItemCatalogue, type ItemTemplate } from '../content/item/index.ts'
+import { type Player } from '../player/index.ts'
 
 /**
  * A body mod's type

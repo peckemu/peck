@@ -1,6 +1,6 @@
 import { computed, type ComputedRef, type MaybeRefOrGetter, toValue } from 'vue'
 
-import { type ButtonVariant } from '#ui/components/button/types'
+import { type ButtonVariant } from '../../types/index.ts'
 
 /**
  * The classes for each variant

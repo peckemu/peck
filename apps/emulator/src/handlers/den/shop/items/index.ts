@@ -3,8 +3,8 @@ import { DenShopRepository } from '@peck/database'
 import { DenShopItemsIncoming, DenShopItemsOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerFinder } from '#emulator/sessions/finder'
+import { type HandlerContext } from '../../../../dispatch/context/index.ts'
+import { PlayerFinder } from '../../../../sessions/finder/index.ts'
 
 /**
  * Shows a stand's stock

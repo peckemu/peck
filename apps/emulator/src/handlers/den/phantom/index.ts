@@ -3,8 +3,8 @@ import { type Player } from '@peck/game'
 import { DenPhantomIncoming, DenPhantomOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { SessionManager } from '#emulator/sessions/manager'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
 
 /**
  * Turns the player into a phantom or back

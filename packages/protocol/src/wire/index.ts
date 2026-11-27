@@ -1,4 +1,3 @@
-export * from './decoder/index.ts'
 export * from './encoder/index.ts'
 export * from './json/index.ts'
 export * from './message/index.ts'

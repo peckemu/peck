@@ -4,7 +4,7 @@ import { AvatarRules, type Player } from '@peck/game'
 import { AvatarOrdainIncoming, AvatarOrdainOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * The most animals a non-member keeps

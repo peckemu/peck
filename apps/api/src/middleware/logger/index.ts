@@ -2,7 +2,7 @@ import { type Logger } from '@peck/logger'
 import { type MiddlewareHandler } from 'hono'
 import { createMiddleware } from 'hono/factory'
 
-import { type Context } from '#api/types'
+import { type Context } from '../../types/index.ts'
 
 /**
  * Logs each request

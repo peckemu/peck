@@ -4,8 +4,8 @@ import {
   type QuestActorTemplate,
   type QuestPrize,
   type QuestTemplate,
-} from '#game/content/quest'
-import { type Room } from '#game/room'
+} from '../content/quest/index.ts'
+import { type Room } from '../room/index.ts'
 
 /**
  * A player's most health

@@ -4,8 +4,8 @@ import {
   AuditEntry,
   type AuditAction,
   type AuditTarget,
-} from '#database/entities/access/audit'
-import { type Database } from '#database/pool'
+} from '../../entities/access/audit/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * An audit row being written

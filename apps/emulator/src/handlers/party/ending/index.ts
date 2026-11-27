@@ -5,9 +5,9 @@ import { HostedParties } from '@peck/game'
 import { type Logger } from '@peck/logger'
 import { HostedPartyKilledOutgoing } from '@peck/packets'
 
-import { PartyClock } from '#emulator/handlers/party/clock'
-import { SessionManager } from '#emulator/sessions/manager'
-import { LoggerToken } from '#emulator/tokens'
+import { PartyClock } from '../clock/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { LoggerToken } from '../../../tokens/index.ts'
 
 /**
  * Ends hosted parties early

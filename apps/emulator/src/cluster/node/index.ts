@@ -8,9 +8,9 @@ import {
 import { RoomManager } from '@peck/game'
 import { type Logger } from '@peck/logger'
 
-import { type Config } from '#emulator/config'
-import { SessionManager } from '#emulator/sessions/manager'
-import { ConfigToken, LoggerToken } from '#emulator/tokens'
+import { type Config } from '../../config/index.ts'
+import { SessionManager } from '../../sessions/manager/index.ts'
+import { ConfigToken, LoggerToken } from '../../tokens/index.ts'
 
 /**
  * The heartbeat interval

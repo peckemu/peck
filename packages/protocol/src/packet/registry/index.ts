@@ -1,4 +1,4 @@
-import { type PacketFormat } from '#protocol/wire/message'
+import { type PacketFormat } from '../../wire/message/index.ts'
 
 /**
  * What a registry holds

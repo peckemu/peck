@@ -7,9 +7,9 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { BuddyService } from '#emulator/cluster/buddies'
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerFinder } from '#emulator/sessions/finder'
+import { BuddyService } from '../../../cluster/buddies/index.ts'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PlayerFinder } from '../../../sessions/finder/index.ts'
 
 /**
  * Blocks a player

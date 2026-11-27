@@ -8,8 +8,8 @@ import {
 } from '@peck/game'
 import { RoomJoinOutgoing, RoomPropertiesOutgoing } from '@peck/packets'
 
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
 
 /**
  * Finds the party rooms

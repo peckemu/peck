@@ -15,8 +15,8 @@ import {
 } from '@peck/packets'
 import { CURRENCIES, ShopListType, UserVar } from '@peck/shared'
 
-import { type Session } from '#emulator/sessions/session'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { type Session } from '../session/index.ts'
+import { PlayerVariables } from '../variables/index.ts'
 
 /**
  * Jam Mart Clothing's list

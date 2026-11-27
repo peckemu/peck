@@ -7,7 +7,7 @@ import {
   type Type,
 } from 'uql-orm'
 
-import { Seed } from '#database/seeder'
+import { Seed } from '../../seeder/index.ts'
 
 /**
  * The content directory

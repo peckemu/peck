@@ -2,8 +2,8 @@ import { inject, injectable } from '@needle-di/core'
 import { PlayerRepository } from '@peck/database'
 import { Player } from '@peck/game'
 
-import { SessionManager } from '#emulator/sessions/manager'
-import { MasterpieceFrames } from '#emulator/handlers/masterpiece/frames'
+import { SessionManager } from '../manager/index.ts'
+import { MasterpieceFrames } from '../../handlers/masterpiece/frames/index.ts'
 
 /**
  * Finds players online or offline

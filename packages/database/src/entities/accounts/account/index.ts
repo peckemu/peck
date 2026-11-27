@@ -9,10 +9,10 @@ import {
   uuid,
 } from 'uql-orm'
 
-import { Confirmation } from '#database/entities/accounts/confirmation'
-import { PasswordReset } from '#database/entities/accounts/reset'
-import { Session } from '#database/entities/accounts/session'
-import { Player } from '#database/entities/player'
+import { Confirmation } from '../confirmation/index.ts'
+import { PasswordReset } from '../reset/index.ts'
+import { Session } from '../session/index.ts'
+import { Player } from '../../player/index.ts'
 
 /**
  * An account

@@ -8,7 +8,7 @@ import {
   ManyToOne,
 } from 'uql-orm'
 
-import { Account } from '#database/entities/accounts/account'
+import { Account } from '../account/index.ts'
 
 /**
  * A request to reset an account's password

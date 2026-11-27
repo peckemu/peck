@@ -1,6 +1,6 @@
 import { createHash, randomBytes } from 'node:crypto'
 
-import { type ClusterStore } from '#cluster/store'
+import { type ClusterStore } from '../store/index.ts'
 
 /**
  * How long a ticket lasts

@@ -9,7 +9,7 @@ import {
   uuid,
 } from 'uql-orm'
 
-import { Account } from '#database/entities/accounts/account'
+import { Account } from '../../accounts/account/index.ts'
 
 /**
  * Every audited action

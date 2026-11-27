@@ -1,7 +1,7 @@
 import { type Container } from '@needle-di/core'
 import { type Account } from '@peck/database'
 
-import { type Access } from '#api/modules/access/services'
+import { type Access } from '../modules/access/services/index.ts'
 
 /**
  * The request context

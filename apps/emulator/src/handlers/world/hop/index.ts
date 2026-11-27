@@ -3,8 +3,8 @@ import { type NodeInfo } from '@peck/cluster'
 import { NodeHopIncoming, NodeHopOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { ClusterNode } from '#emulator/cluster/node'
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { ClusterNode } from '../../../cluster/node/index.ts'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Sends a player to another node

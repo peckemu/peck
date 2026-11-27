@@ -1,4 +1,4 @@
-import { type AmfObject, type AmfValue } from '#content/amf'
+import { type AmfObject, type AmfValue } from '../amf/index.ts'
 
 /**
  * A definition in a pack

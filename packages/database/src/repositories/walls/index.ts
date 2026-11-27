@@ -1,14 +1,14 @@
-import { Block } from '#database/entities/buddies/block'
-import { Buddy } from '#database/entities/buddies/buddy'
-import { Player } from '#database/entities/player'
+import { Block } from '../../entities/buddies/block/index.ts'
+import { Buddy } from '../../entities/buddies/buddy/index.ts'
+import { Player } from '../../entities/player/index.ts'
 import {
   Wall,
   type WallFrame,
   type WallSticker,
-} from '#database/entities/wall/board'
-import { WallHidden } from '#database/entities/wall/hidden'
-import { type PostAvatar, WallPost } from '#database/entities/wall/post'
-import { type Database, type Querier } from '#database/pool'
+} from '../../entities/wall/board/index.ts'
+import { WallHidden } from '../../entities/wall/hidden/index.ts'
+import { type PostAvatar, WallPost } from '../../entities/wall/post/index.ts'
+import { type Database, type Querier } from '../../pool/index.ts'
 
 /**
  * Who may open a wall

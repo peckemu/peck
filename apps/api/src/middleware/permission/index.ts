@@ -2,9 +2,9 @@ import { type Permission } from '@peck/permissions'
 import { type MiddlewareHandler } from 'hono'
 import { createMiddleware } from 'hono/factory'
 
-import { ServiceError } from '#api/errors'
-import { AccessService } from '#api/modules/access/services'
-import { type Context } from '#api/types'
+import { ServiceError } from '../../errors/index.ts'
+import { AccessService } from '../../modules/access/services/index.ts'
+import { type Context } from '../../types/index.ts'
 
 /**
  * Requires permissions

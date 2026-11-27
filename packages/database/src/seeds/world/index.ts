@@ -1,7 +1,7 @@
 import { type EntityWrite } from 'uql-orm'
 
-import { WorldItemDefinition } from '#database/entities/definitions/world'
-import { DefinitionSeed, type Timed, timed } from '#database/seeds/definition'
+import { WorldItemDefinition } from '../../entities/definitions/world/index.ts'
+import { DefinitionSeed, type Timed, timed } from '../definition/index.ts'
 
 /**
  * Seeds the world items

@@ -1,5 +1,5 @@
-import { moderationRouter } from '#api/modules/moderation/routes'
-import { type Module } from '#api/modules/module'
+import { moderationRouter } from './routes/index.ts'
+import { type Module } from '../module/index.ts'
 
 /**
  * The moderation module

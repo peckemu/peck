@@ -15,8 +15,8 @@ import {
 import { type Logger } from '@peck/logger'
 import { QuestPrizeKind } from '@peck/shared'
 
-import { Loader } from '#emulator/loaders/loader'
-import { LoggerToken } from '#emulator/tokens'
+import { Loader } from '../loader/index.ts'
+import { LoggerToken } from '../../tokens/index.ts'
 
 /**
  * The prize kinds a player can win

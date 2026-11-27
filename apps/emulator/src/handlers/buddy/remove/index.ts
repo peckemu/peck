@@ -3,8 +3,8 @@ import { BuddyRepository } from '@peck/database'
 import { BuddyRemoveIncoming, BuddyRemoveOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { BuddyService } from '#emulator/cluster/buddies'
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { BuddyService } from '../../../cluster/buddies/index.ts'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Ends a buddyship

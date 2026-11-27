@@ -3,11 +3,11 @@ import { chooseNode, NodeRegistry, TicketStore } from '@peck/cluster'
 import { AccountRepository, PlayerRepository } from '@peck/database'
 import { AccountType } from '@peck/shared'
 
-import { type Config } from '#api/config'
-import { ServiceError } from '#api/errors'
-import { type PlayerSessionView } from '#api/modules/launcher/views'
-import { type Flashvars, flashvars } from '#api/modules/play/flashvars'
-import { ConfigToken } from '#api/tokens'
+import { type Config } from '../../../config/index.ts'
+import { ServiceError } from '../../../errors/index.ts'
+import { type PlayerSessionView } from '../views/index.ts'
+import { type Flashvars, flashvars } from '../../play/flashvars/index.ts'
+import { ConfigToken } from '../../../tokens/index.ts'
 
 /**
  * Answers the launcher

@@ -1,5 +1,5 @@
-import { type PacketContext, type PacketSession } from '#plugins/context'
-import { Guard } from '#plugins/guards/guard'
+import { type PacketContext, type PacketSession } from '../../context/index.ts'
+import { Guard } from '../guard/index.ts'
 
 /**
  * Throttle options

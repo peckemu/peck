@@ -1,7 +1,7 @@
 import { AvatarSlotIncoming, AvatarSlotOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Buys another animal slot

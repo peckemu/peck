@@ -1,5 +1,5 @@
-import { GameError } from '#game/error'
-import { type Item } from '#game/item'
+import { GameError } from '../error/index.ts'
+import { type Item } from '../item/index.ts'
 
 /**
  * An avatar's three colours

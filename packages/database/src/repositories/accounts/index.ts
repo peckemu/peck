@@ -1,5 +1,5 @@
-import { Account } from '#database/entities/accounts/account'
-import { type Database } from '#database/pool'
+import { Account } from '../../entities/accounts/account/index.ts'
+import { type Database } from '../../pool/index.ts'
 
 /**
  * A new account

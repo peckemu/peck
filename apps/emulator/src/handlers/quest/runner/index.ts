@@ -42,10 +42,10 @@ import { type PacketSession, PluginEvents } from '@peck/plugins'
 import { type OutgoingPacket } from '@peck/protocol'
 import { CURRENCIES, QuestPrizeKind, RoomJoinType } from '@peck/shared'
 
-import { type Config } from '#emulator/config'
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
-import { ConfigToken } from '#emulator/tokens'
+import { type Config } from '../../../config/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
+import { ConfigToken } from '../../../tokens/index.ts'
 
 /**
  * The ways out the client handles itself

@@ -8,9 +8,9 @@ import {
 } from '@peck/plugins'
 import { PacketFactory, ProtocolError } from '@peck/protocol'
 
-import { HandlerContext } from '#emulator/dispatch/context'
-import { type Session } from '#emulator/sessions/session'
-import { SessionManager } from '#emulator/sessions/manager'
+import { HandlerContext } from '../context/index.ts'
+import { type Session } from '../../sessions/session/index.ts'
+import { SessionManager } from '../../sessions/manager/index.ts'
 
 /**
  * What happened to a frame

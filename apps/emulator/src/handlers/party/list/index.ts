@@ -3,7 +3,7 @@ import { PartyCalendar, PartyCatalogue, RoomManager } from '@peck/game'
 import { PartyListIncoming, PartyListOutgoing } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
 
 /**
  * Lists the parties on and coming

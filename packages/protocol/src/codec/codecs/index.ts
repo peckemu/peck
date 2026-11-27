@@ -1,12 +1,12 @@
-import { type FormatCodec, type WriteTarget } from '#protocol/codec/format'
-import { JsonCodec } from '#protocol/codec/json'
-import { type Schema } from '#protocol/codec/schema'
-import { XmlCodec } from '#protocol/codec/xml'
-import { XtCodec } from '#protocol/codec/xt'
-import { JsonMessage } from '#protocol/wire/json/message'
-import { type Message, type PacketFormat } from '#protocol/wire/message'
-import { XmlMessage } from '#protocol/wire/xml/message'
-import { XtMessage } from '#protocol/wire/xt/message'
+import { type FormatCodec, type WriteTarget } from '../format/index.ts'
+import { JsonCodec } from '../json/index.ts'
+import { type Schema } from '../schema/index.ts'
+import { XmlCodec } from '../xml/index.ts'
+import { XtCodec } from '../xt/index.ts'
+import { JsonMessage } from '../../wire/json/message/index.ts'
+import { type Message, type PacketFormat } from '../../wire/message/index.ts'
+import { XmlMessage } from '../../wire/xml/message/index.ts'
+import { XtMessage } from '../../wire/xt/message/index.ts'
 
 /**
  * The packet codecs

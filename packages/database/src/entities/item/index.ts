@@ -8,7 +8,7 @@ import {
   ManyToOne,
 } from 'uql-orm'
 
-import { Player } from '#database/entities/player'
+import { Player } from '../player/index.ts'
 
 /**
  * A clothing item a player owns

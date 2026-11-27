@@ -2,7 +2,7 @@ import { type ChatKind, ChatKind as Kind, isChatKind } from '@peck/shared'
 
 import { Field, IncomingPacket, Packet, XmlEntities } from '@peck/protocol'
 
-import { Incoming } from '#packets/incoming/headers'
+import { Incoming } from '../../headers/index.ts'
 
 /**
  * The raw text

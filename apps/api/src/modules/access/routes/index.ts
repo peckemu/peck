@@ -1,6 +1,10 @@
 import { Hono } from 'hono'
 
-import { validate, withAuth, withPermission } from '#api/middleware'
+import {
+  validate,
+  withAuth,
+  withPermission,
+} from '../../../middleware/index.ts'
 import {
   accountIdSchema,
   assignSchema,
@@ -9,10 +13,10 @@ import {
   pageSchema,
   roleIdSchema,
   roleSchema,
-} from '#api/modules/access/schemas'
-import { AccessService } from '#api/modules/access/services'
-import { auditView, permissionView } from '#api/modules/access/views'
-import { type Context } from '#api/types'
+} from '../schemas/index.ts'
+import { AccessService } from '../services/index.ts'
+import { auditView, permissionView } from '../views/index.ts'
+import { type Context } from '../../../types/index.ts'
 
 /**
  * The access routes

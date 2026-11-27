@@ -3,11 +3,11 @@ import { type Player } from '@peck/game'
 import { InvisibleIncoming, InvisibleOutgoing } from '@peck/packets'
 import { Handler, PacketHandler, Throttle } from '@peck/plugins'
 
-import { BuddyService } from '#emulator/cluster/buddies'
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { ModerationTools } from '#emulator/handlers/moderation/tools'
-import { type Session } from '#emulator/sessions/session'
-import { SessionManager } from '#emulator/sessions/manager'
+import { BuddyService } from '../../../cluster/buddies/index.ts'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { ModerationTools } from '../tools/index.ts'
+import { type Session } from '../../../sessions/session/index.ts'
+import { SessionManager } from '../../../sessions/manager/index.ts'
 
 /**
  * Hides or shows a moderator

@@ -1,11 +1,11 @@
-import { Account } from '#database/entities/accounts/account'
-import { type CodeItem, RedemptionCode } from '#database/entities/codes/code'
-import { CodeRedemption } from '#database/entities/codes/redemption'
-import { type Database } from '#database/pool'
+import { Account } from '../../entities/accounts/account/index.ts'
 import {
-  type GrantedReward,
-  RewardRepository,
-} from '#database/repositories/rewards'
+  type CodeItem,
+  RedemptionCode,
+} from '../../entities/codes/code/index.ts'
+import { CodeRedemption } from '../../entities/codes/redemption/index.ts'
+import { type Database } from '../../pool/index.ts'
+import { type GrantedReward, RewardRepository } from '../rewards/index.ts'
 
 /**
  * A code to make

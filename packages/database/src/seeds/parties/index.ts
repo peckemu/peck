@@ -1,7 +1,7 @@
 import { type EntityWrite } from 'uql-orm'
 
-import { PartyDefinition } from '#database/entities/definitions/party'
-import { DefinitionSeed } from '#database/seeds/definition'
+import { PartyDefinition } from '../../entities/definitions/party/index.ts'
+import { DefinitionSeed } from '../definition/index.ts'
 
 /**
  * Seeds the parties

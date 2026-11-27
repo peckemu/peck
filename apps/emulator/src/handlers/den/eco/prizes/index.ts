@@ -14,10 +14,10 @@ import {
 import { PluginEvents } from '@peck/plugins'
 import { BIT_FIELD_USER_VARS, UserVar } from '@peck/shared'
 
-import { DenEcoSystem } from '#emulator/handlers/den/eco/system'
-import { SessionManager } from '#emulator/sessions/manager'
-import { type Session } from '#emulator/sessions/session'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { DenEcoSystem } from '../system/index.ts'
+import { SessionManager } from '../../../../sessions/manager/index.ts'
+import { type Session } from '../../../../sessions/session/index.ts'
+import { PlayerVariables } from '../../../../sessions/variables/index.ts'
 
 /**
  * The answer's bits

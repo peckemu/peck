@@ -7,8 +7,8 @@ import {
 } from '@peck/packets'
 import { Handler, PacketHandler } from '@peck/plugins'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { QuestRunner, type QuestRefused } from '#emulator/handlers/quest/runner'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { QuestRunner, type QuestRefused } from '../runner/index.ts'
 
 /**
  * Joins a private adventure

@@ -1,3 +1,3 @@
-import { printBanner } from '#banner/terminal'
+import { printBanner } from '../terminal/index.ts'
 
 printBanner()

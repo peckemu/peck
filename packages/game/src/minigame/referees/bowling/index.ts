@@ -1,4 +1,4 @@
-import { Referee, type SeatIndex, type Told } from '#game/minigame/referee'
+import { Referee, type SeatIndex, type Told } from '../../referee/index.ts'
 
 /**
  * The emotes a player can show

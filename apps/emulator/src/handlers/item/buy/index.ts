@@ -17,8 +17,8 @@ import {
 import { Handler, PacketHandler } from '@peck/plugins'
 import { ShopListType, UserVar } from '@peck/shared'
 
-import { type HandlerContext } from '#emulator/dispatch/context'
-import { PlayerVariables } from '#emulator/sessions/variables'
+import { type HandlerContext } from '../../../dispatch/context/index.ts'
+import { PlayerVariables } from '../../../sessions/variables/index.ts'
 
 /**
  * Buys clothing

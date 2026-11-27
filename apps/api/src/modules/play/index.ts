@@ -1,5 +1,5 @@
-import { type Module } from '#api/modules/module'
-import { playRouter } from '#api/modules/play/routes'
+import { type Module } from '../module/index.ts'
+import { playRouter } from './routes/index.ts'
 
 /**
  * The play module

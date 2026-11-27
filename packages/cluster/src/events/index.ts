@@ -1,4 +1,4 @@
-import { type ClusterStore } from '#cluster/store'
+import { type ClusterStore } from '../store/index.ts'
 
 /**
  * The channel cluster events go on
